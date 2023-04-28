@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{55BEA023-3A12-4868-9A05-53DC320F2692}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{55BEA023-3A12-4868-9A05-53DC320F2692}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{55BEA023-3A12-4868-9A05-53DC320F2692}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Games, Video, Retro, 8 Bit, Coins, Low &amp; High SND62967" ID="{F76BFB85-1AE8-4147-B08C-2E7EACBC8059}" ShortID="608904641">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Games, Video, Retro, 8 Bit, Coins, Low &amp; High SND62967" ID="{2021E6B3-0FCF-4275-80F2-B36966AF2081}">
+							<Language>SFX</Language>
+							<AudioFile>Games, Video, Retro, 8 Bit, Coins, Low &amp; High SND62967.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="50911886"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Games, Video, Retro, 8 Bit, Coins, Low &amp; High SND62967" ID="{2021E6B3-0FCF-4275-80F2-B36966AF2081}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
