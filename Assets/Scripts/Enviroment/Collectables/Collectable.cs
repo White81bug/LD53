@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectable : MonoBehaviour,ICollectable
+public class Collectable : MonoBehaviour, ICollectable
 {
     public CollectableType Type;
     public float slowDown = 0.2f;
@@ -11,5 +11,4 @@ public class Collectable : MonoBehaviour,ICollectable
         Food,
         Scheme
     }    
-    
 }

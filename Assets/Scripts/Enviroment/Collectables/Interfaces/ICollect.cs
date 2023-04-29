@@ -1,5 +1,4 @@
-
-public interface ICollectable 
+public interface ICollect
 {
     public void Take();
     public void Drop();
