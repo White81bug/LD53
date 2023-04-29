@@ -17,7 +17,6 @@ public class CameraController : MonoBehaviour
 
     [Range(0.1f, 0.2f)] [SerializeField]
     private float distanceChangeScale = 0.18f;
-    [SerializeField] public Transform Player;
     
     private Quaternion rotOffset;
     
@@ -31,7 +30,7 @@ public class CameraController : MonoBehaviour
         cam = GetComponent<Camera>();
         
         if ((distanceToTarget = PlayerPrefs.GetFloat("CameraDistance")) == 0)
-            distanceToTarget = Vector3.Distance(transform.position,Player.position);
+            distanceToTarget = Vector3.Distance(transform.position,target.position);
         
         //Установка сохраненных значений
         rotOffset.x = PlayerPrefs.GetFloat("xOffset");
@@ -54,6 +53,7 @@ public class CameraController : MonoBehaviour
     {
         distanceToTarget -= value * distanceChangeScale;
         distanceToTarget = Math.Clamp(distanceToTarget,MinDistance,MaxDistance);
+        PlayerPrefs.SetFloat("CameraDistance", distanceToTarget);
     }
 
     public void moveToTarget()
