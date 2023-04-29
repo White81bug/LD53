@@ -1,11 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(Collider))]
 public class MonsterChasing : MonoBehaviour
 {
+    public UnityAction OnStartChasing;
+    public UnityAction OnStopChasing;
+
     [SerializeField, Min(0f)] private float _speed = 2f;
 
     private NavMeshAgent _agent;
@@ -34,6 +36,7 @@ public class MonsterChasing : MonoBehaviour
         {
             _player = other.gameObject;
             _isChasing = true;
+            OnStartChasing?.Invoke();
         }
     }
 
@@ -43,6 +46,7 @@ public class MonsterChasing : MonoBehaviour
         {
             _player = null;
             _isChasing = false;
+            OnStopChasing?.Invoke();
         }
     }
 }
