@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
-    [Range(4, 10)][SerializeField]private float movementSpeed = 4.0f;
+    [Range(4, 10)][SerializeField]public float movementSpeed = 4.0f;
     private Rigidbody rigidBody;
 
     private Quaternion Rotation;
