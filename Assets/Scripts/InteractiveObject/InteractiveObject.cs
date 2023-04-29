@@ -14,7 +14,7 @@ public class InteractiveObject : MonoBehaviour
 
     protected virtual void Awake()
     {
-        //_rb = GetComponent<Rigidbody>();
+        //_rb = GetComponen  t<Rigidbody>();
         _collider = GetComponent<Collider>();
 
         _material = GetComponent<Renderer>().material;
