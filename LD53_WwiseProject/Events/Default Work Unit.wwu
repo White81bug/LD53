@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E055D274-8044-4EB8-A411-8031516B9A26}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E055D274-8044-4EB8-A411-8031516B9A26}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="test" ID="{C58168F8-964B-46D0-981C-0C15216DD55F}">
+					<ChildrenList>
+						<Action Name="" ID="{04DA9341-B3D2-4249-82B5-2BB05AB8AFF1}" ShortID="966639599">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Games, Video, Retro, 8 Bit, Coins, Low &amp; High SND62967" ID="{F76BFB85-1AE8-4147-B08C-2E7EACBC8059}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
