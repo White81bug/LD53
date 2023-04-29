@@ -4,6 +4,7 @@ using UnityEngine;
 public class MovementController : MonoBehaviour
 {
     [Range(4, 10)][SerializeField]public float movementSpeed = 4.0f;
+    private float _startMovementSpeed;
     private Rigidbody rigidBody;
 
     private Quaternion Rotation;
@@ -20,11 +21,22 @@ public class MovementController : MonoBehaviour
     
     private Ray ray;
     private RaycastHit raycstHit;
-    
 
-    
+    private void OnEnable()
+    {
+        PlayerCollect.OnTakeObject.AddListener(Slowdown);
+        PlayerCollect.OnDropObject += RestoreSpeed;
+    }
+
+    private void OnDisable()
+    {
+        PlayerCollect.OnTakeObject.RemoveListener(Slowdown);
+        PlayerCollect.OnDropObject -= RestoreSpeed;
+    }
+
     private void Awake()
     {
+        _startMovementSpeed = movementSpeed;
         rigidBody = GetComponent<Rigidbody>();
     }
 
@@ -80,6 +92,17 @@ public class MovementController : MonoBehaviour
         velocity.z = desiredVelocity.z * multiplier;
 
         rigidBody.velocity = velocity;
+    }
+
+    private void Slowdown(float value)
+    {
+        Debug.Log($"slowdown {value}");
+        movementSpeed -= value;
+    }
+
+    private void RestoreSpeed()
+    {
+        movementSpeed = _startMovementSpeed;
     }
 }
 

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Player interaction with ICollectable.
@@ -12,8 +13,12 @@ public class PlayerCollect : MonoBehaviour
     private List<GameObject> _collectableObjects; // List<> to prevent bug with several GameObjects collision.
     private GameObject _currentObject;
 
+    public static UnityEvent<float> OnTakeObject;
+    public static UnityAction OnDropObject;
+
     private void Awake()
     {
+        OnTakeObject = new UnityEvent<float>();
         _collectableObjects = new List<GameObject>();
     }
 
@@ -57,6 +62,7 @@ public class PlayerCollect : MonoBehaviour
             _currentObject = AdditionalMath.FindClosestGameObject(transform, _collectableObjects);
             _currentObject.transform.position = _pointOfObject.transform.position;
             _currentObject.transform.SetParent(_pointOfObject);
+            OnTakeObject?.Invoke(_currentObject.GetComponent<CollectableObject>().Slowdown);
         }
     }
 
@@ -71,6 +77,7 @@ public class PlayerCollect : MonoBehaviour
 
             _currentObject.transform.SetParent(GameManager.Instance.TransformParentManager.CollectableObjectsParent);
             _currentObject = null;
+            OnDropObject?.Invoke();
         }
     }
 }
