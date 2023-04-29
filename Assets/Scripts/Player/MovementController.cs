@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class MovementController : MonoBehaviour
@@ -8,12 +7,7 @@ public class MovementController : MonoBehaviour
     private Rigidbody rigidBody;
 
     private Quaternion Rotation;
-    [SerializeField] private float dashForce = 30;
-    private bool _isDashing;
-    [SerializeField] private float _dashTime = 0.5f; 
-    [SerializeField] private float _dashSpeed = 10; 
-    [SerializeField] private AnimationCurve  _dashSpeedCurve; 
-
+    
     [SerializeField] private Camera Camera;
     
     private Vector3 mousePos;
@@ -43,12 +37,8 @@ public class MovementController : MonoBehaviour
     public void Move(Vector3 Direction)
     {
         moveDir = Direction*movementSpeed;
+        moveDir.y = rigidBody.velocity.y;
         rigidBody.velocity = moveDir;
-    }
-
-    public void Stay()
-    {
-        rigidBody.velocity = Vector3.zero;
     }
 
     public void Rotate()
@@ -60,40 +50,6 @@ public class MovementController : MonoBehaviour
         mousePos.y = transform.position.y;
         transform.LookAt(mousePos);
     }
-    public IEnumerator Dash()
-    {
-        Vector3 direction = transform.forward;
-        if (rigidBody.velocity != Vector3.zero)
-            direction = rigidBody.velocity.normalized;
-        if (direction == Vector3.zero) yield break;
-        if (_isDashing) yield break;
-
-        _isDashing = true;
-
-        var elapsedTime = 0f;
-        while (elapsedTime < _dashTime)
-        {
-            var velocityMultiplier = _dashSpeed * _dashSpeedCurve.Evaluate(elapsedTime);
-
-            ApplyVelocity(direction, velocityMultiplier);
-
-            elapsedTime += Time.deltaTime;
-            yield return new WaitForSeconds(Time.deltaTime);
-        }
-        _isDashing = false;
-    }
-
-    private void ApplyVelocity(Vector3 desiredVelocity, float multiplier) // Дублирующийся код всегда выносить в отдельный метод
-    {
-        var velocity = rigidBody.velocity;
-
-        velocity.y = desiredVelocity.y == 0 ? velocity.y : desiredVelocity.y * multiplier;// чтобы не ломать физику, скорость по Y будет изменяться только если это нужно
-        velocity.x = desiredVelocity.x * multiplier;
-        velocity.z = desiredVelocity.z * multiplier;
-
-        rigidBody.velocity = velocity;
-    }
-
     private void Slowdown(GameObject gameObject)
     {
         Slowdown(gameObject.GetComponent<CollectableObject>().Slowdown);
@@ -101,7 +57,6 @@ public class MovementController : MonoBehaviour
 
     private void Slowdown(float value)
     {
-        //Debug.Log($"slowdown {value}");
         movementSpeed -= value;
     }
 
