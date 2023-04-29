@@ -1,10 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
-public sealed class MonsterNavMesh : MonoBehaviour
+public sealed class MonsterPatrol : MonoBehaviour
 {
     [SerializeField] private Transform[] _waypoints;
     [SerializeField] private int _startWaypoint;
@@ -16,6 +15,26 @@ public sealed class MonsterNavMesh : MonoBehaviour
     private bool _isWaiting;
 
     private NavMeshAgent _agent;
+
+    private void OnEnable()
+    {
+        Transform closestWaypoint = AdditionalMath.FindClosestTransform(transform, _waypoints);
+        for (int i = 0; i < _waypoints.Length; i++)
+        {
+            if (_waypoints[i].transform == closestWaypoint)
+            {
+                _destinationWaypoint = i;
+                break;
+            }
+        }
+    }
+
+    private void OnDisable()
+    {
+        _isWaiting = false;
+        _agent.destination = transform.position;
+        StopCoroutine(WaitAtWaypoint());
+    }
 
     private void Awake()
     {
@@ -39,6 +58,7 @@ public sealed class MonsterNavMesh : MonoBehaviour
 
     private void GotoNextPoint()
     {
+        //Debug.Log("Goto");
         if (_waypoints.Length == 0)
         {
             Debug.LogError("Zero waypoints!");
