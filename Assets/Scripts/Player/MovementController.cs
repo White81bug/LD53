@@ -25,13 +25,13 @@ public class MovementController : MonoBehaviour
     private void OnEnable()
     {
         GameManager.Instance.PlayerCollect.OnTakeObject.AddListener(Slowdown);
-        GameManager.Instance.PlayerCollect.OnDropObject += RestoreSpeed;
+        GameManager.Instance.PlayerCollect.OnDropObject.AddListener(RestoreSpeed);
     }
 
     private void OnDisable()
     {
         GameManager.Instance.PlayerCollect.OnTakeObject.RemoveListener(Slowdown);
-        GameManager.Instance.PlayerCollect.OnDropObject -= RestoreSpeed;
+        GameManager.Instance.PlayerCollect.OnDropObject.RemoveListener(RestoreSpeed);
     }
 
     private void Awake()
@@ -94,13 +94,18 @@ public class MovementController : MonoBehaviour
         rigidBody.velocity = velocity;
     }
 
+    private void Slowdown(GameObject gameObject)
+    {
+        Slowdown(gameObject.GetComponent<CollectableObject>().Slowdown);
+    }
+
     private void Slowdown(float value)
     {
-        Debug.Log($"slowdown {value}");
+        //Debug.Log($"slowdown {value}");
         movementSpeed -= value;
     }
 
-    private void RestoreSpeed()
+    private void RestoreSpeed(GameObject _) // Here argument in unnecessary, but required.
     {
         movementSpeed = _startMovementSpeed;
     }
