@@ -6,8 +6,8 @@ public class CameraController : MonoBehaviour
     public Camera cam; 
     public Transform target; 
     
-    private const float maxVerticalRotation = 70;
-    private const float minVerticalRotation = 40;
+    [SerializeField]private float maxVerticalRotation = 70;
+    [SerializeField]private float minVerticalRotation = 40;
     
     public Vector3 previousPosition;
     
