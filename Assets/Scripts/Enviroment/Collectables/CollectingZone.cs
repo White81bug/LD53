@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
-public class CollectingZone : MonoBehaviour
+public sealed class CollectingZone : MonoBehaviour
 {
     private Dictionary<CollectableObject.CollectableType, int> _collectablesCounter;
 

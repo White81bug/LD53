@@ -3,7 +3,7 @@ using UnityEngine.AI;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(SphereCollider))]
-public class MonsterChasing : MonoBehaviour
+public sealed class MonsterChasing : MonoBehaviour
 {
     public UnityAction OnStartChasing;
     public UnityAction OnStopChasing;

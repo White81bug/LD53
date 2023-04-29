@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(MonsterPatrol), typeof(MonsterChasing))]
-public class MonsterController : MonoBehaviour
+public sealed class MonsterController : MonoBehaviour
 {
     private MonsterPatrol _monsterNavMesh;
     private MonsterChasing _monsterChasing;

@@ -6,7 +6,7 @@ using UnityEngine.Events;
 /// Player interaction with ICollectable.
 /// </summary>
 [RequireComponent(typeof(Collider))]
-public class PlayerCollect : MonoBehaviour
+public sealed class PlayerCollect : MonoBehaviour
 {
     [SerializeField] private Transform _pointOfObject;
 
