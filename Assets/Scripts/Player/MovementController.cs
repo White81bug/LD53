@@ -24,14 +24,14 @@ public class MovementController : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayerCollect.OnTakeObject.AddListener(Slowdown);
-        PlayerCollect.OnDropObject += RestoreSpeed;
+        GameManager.Instance.PlayerCollect.OnTakeObject.AddListener(Slowdown);
+        GameManager.Instance.PlayerCollect.OnDropObject += RestoreSpeed;
     }
 
     private void OnDisable()
     {
-        PlayerCollect.OnTakeObject.RemoveListener(Slowdown);
-        PlayerCollect.OnDropObject -= RestoreSpeed;
+        GameManager.Instance.PlayerCollect.OnTakeObject.RemoveListener(Slowdown);
+        GameManager.Instance.PlayerCollect.OnDropObject -= RestoreSpeed;
     }
 
     private void Awake()

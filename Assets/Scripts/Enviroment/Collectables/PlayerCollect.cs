@@ -13,8 +13,8 @@ public class PlayerCollect : MonoBehaviour
     private List<GameObject> _collectableObjects; // List<> to prevent bug with several GameObjects collision.
     private GameObject _currentObject;
 
-    public static UnityEvent<float> OnTakeObject;
-    public static UnityAction OnDropObject;
+    public UnityEvent<float> OnTakeObject;
+    public UnityAction OnDropObject;
 
     private void Awake()
     {

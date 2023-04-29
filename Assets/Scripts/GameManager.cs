@@ -8,6 +8,7 @@ public sealed class GameManager : MonoBehaviour
 
     [Header("Scripts")]
     public TransformParentManager TransformParentManager;
+    public PlayerCollect PlayerCollect;
 
     private void Awake()
     {

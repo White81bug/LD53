@@ -154,7 +154,7 @@ Transform:
   - {fileID: 1817151742}
   - {fileID: 361726206}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &361726205
 GameObject:
@@ -487,6 +487,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pointOfObject: {fileID: 456440339}
+  OnTakeObject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1035786958
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +763,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1549168982
 MonoBehaviour:
@@ -775,6 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TransformParentManager: {fileID: 1549168983}
+  PlayerCollect: {fileID: 545318937}
 --- !u!114 &1549168983
 MonoBehaviour:
   m_ObjectHideFlags: 0
