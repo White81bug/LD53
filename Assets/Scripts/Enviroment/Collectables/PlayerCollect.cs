@@ -13,12 +13,11 @@ public class PlayerCollect : MonoBehaviour
     private List<GameObject> _collectableObjects; // List<> to prevent bug with several GameObjects collision.
     private GameObject _currentObject;
 
-    public UnityEvent<float> OnTakeObject;
-    public UnityAction OnDropObject;
+    public UnityEvent<GameObject> OnTakeObject;
+    public UnityEvent<GameObject> OnDropObject;
 
     private void Awake()
     {
-        OnTakeObject = new UnityEvent<float>();
         _collectableObjects = new List<GameObject>();
     }
 
@@ -41,7 +40,7 @@ public class PlayerCollect : MonoBehaviour
             if (!_collectableObjects.Contains(other.gameObject))
             {
                 _collectableObjects.Add(other.gameObject);
-                Debug.Log("Added");
+                //Debug.Log("Added");
             }
         }
     }
@@ -51,7 +50,7 @@ public class PlayerCollect : MonoBehaviour
         if (other.GetComponent<CollectableObject>())
         {
             _collectableObjects.Remove(other.gameObject);
-            Debug.Log("Removed");
+            //Debug.Log("Removed");
         }
     }
 
@@ -62,7 +61,7 @@ public class PlayerCollect : MonoBehaviour
             _currentObject = AdditionalMath.FindClosestGameObject(transform, _collectableObjects);
             _currentObject.transform.position = _pointOfObject.transform.position;
             _currentObject.transform.SetParent(_pointOfObject);
-            OnTakeObject?.Invoke(_currentObject.GetComponent<CollectableObject>().Slowdown);
+            OnTakeObject?.Invoke(_currentObject);
         }
     }
 
@@ -76,8 +75,8 @@ public class PlayerCollect : MonoBehaviour
             else Debug.LogError("Physics.Raycast didn't found floor.");
 
             _currentObject.transform.SetParent(GameManager.Instance.TransformParentManager.CollectableObjectsParent);
+            OnDropObject?.Invoke(_currentObject);
             _currentObject = null;
-            OnDropObject?.Invoke();
         }
     }
 }
