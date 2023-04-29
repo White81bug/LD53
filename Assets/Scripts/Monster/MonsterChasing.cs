@@ -2,12 +2,13 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(NavMeshAgent), typeof(Collider))]
+[RequireComponent(typeof(NavMeshAgent), typeof(SphereCollider))]
 public class MonsterChasing : MonoBehaviour
 {
     public UnityAction OnStartChasing;
     public UnityAction OnStopChasing;
 
+    [SerializeField, Min(0f)] private float _radiusOfDetecting;
     [SerializeField, Min(0f)] private float _speed = 2f;
 
     private NavMeshAgent _agent;
@@ -15,11 +16,23 @@ public class MonsterChasing : MonoBehaviour
     private GameObject _player;
     private bool _isChasing;
 
+    private SphereCollider _sphereCollider;
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _radiusOfDetecting);
+    }
+
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
         _agent.speed = _speed;
         _agent.autoBraking = false;
+
+        _sphereCollider = GetComponent<SphereCollider>();
+        _sphereCollider.radius = _radiusOfDetecting;
+        _sphereCollider.isTrigger = true;
     }
 
     private void Update()
