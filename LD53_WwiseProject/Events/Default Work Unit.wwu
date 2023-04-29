@@ -3,12 +3,23 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{E055D274-8044-4EB8-A411-8031516B9A26}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="test" ID="{C58168F8-964B-46D0-981C-0C15216DD55F}">
+				<Event Name="MUS_Menu" ID="{0CAE5260-8B68-4022-9649-68F23A7B8EA4}">
 					<ChildrenList>
-						<Action Name="" ID="{04DA9341-B3D2-4249-82B5-2BB05AB8AFF1}" ShortID="966639599">
+						<Action Name="" ID="{ED41B2C4-E616-4849-8BC7-C6F8A4AF6A27}" ShortID="96371756">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Games, Video, Retro, 8 Bit, Coins, Low &amp; High SND62967" ID="{F76BFB85-1AE8-4147-B08C-2E7EACBC8059}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+									<ObjectRef Name="MUS_Menu" ID="{C4088772-A4FC-4B1C-B07F-31AB34EEF583}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_Location_01" ID="{C13BE6A5-A556-4EC5-A042-FC4D8610BAF9}">
+					<ChildrenList>
+						<Action Name="" ID="{03C0C524-4080-412F-8AF7-E76E66AD34C7}" ShortID="913311959">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_location_01" ID="{0CC3D1D6-1F7B-47D7-8AE0-AADFFA95AF54}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

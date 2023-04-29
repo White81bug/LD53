@@ -3,6 +3,8 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{6D8CE642-0C04-4AC3-AD9D-3EF27AB080AF}">
 			<PropertyList>
+				<Property Name="Event Action List\{0CAE5260-8B68-4022-9649-68F23A7B8EA4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C13BE6A5-A556-4EC5-A042-FC4D8610BAF9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C58168F8-964B-46D0-981C-0C15216DD55F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
@@ -21,19 +23,24 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="AW2RN59NykO+q99gCVdYkg=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="7rjkuIMmvUm+MlTMK0gdoQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="WBmxd6EWSkOT5OqXKP42+QEAD+mqAAAAwJRad/9/AACIuxt3TwIAAAAAAABPAgAAwJRad/9/AADUkq93/38AACAo+gRPAgAAAAAAAE8CAAAIAAAATwIAADjnD+mqAAAAMATEd/9/AABPBcR3/38AADAExHf/fwAAwJRad/9/AADAlFp3/38AAIi7G3dPAgAAAQAAAErPdGU+2utMidIb4kZqoWYBAA/pqgAAAMCUWnf/fwAAiLsbd08CAAAAAAAATwIAAMCUWnf/fwAA1JKvd/9/AAAgKPoETwIAAAAAAABPAgAACAAAAE8CAAA45w/pqgAAADAExHf/fwAATwXEd/9/AAAwBMR3/38AAMCUWnf/fwAAwJRad/9/AACIuxt3TwIAAAEAAAA="/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="WBmxd6EWSkOT5OqXKP42+QEAl9gdAAAAwJTLWv9/AACIPP3bkgEAAAAAAACSAQAAwJTLWv9/AADUknU7/38AALAYwO6SAQAAAAAAAJIBAAAIAAAAkgEAANjkl9gdAAAAMASKO/9/AABPBYo7/38AADAEijv/fwAAwJTLWv9/AADAlMta/38AAIg8/duSAQAAAQAAAErPdGU+2utMidIb4kZqoWYBAJfYHQAAAMCUy1r/fwAAiDz925IBAAAAAAAAkgEAAMCUy1r/fwAA1JJ1O/9/AACwGMDukgEAAAAAAACSAQAACAAAAJIBAADY5JfYHQAAADAEijv/fwAATwWKO/9/AAAwBIo7/38AAMCUy1r/fwAAwJTLWv9/AACIPP3bkgEAAAEAAAA="/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
+				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
+				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
+				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
+				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{031E1E2C-DC25-4332-80C3-FFCC371AC803}" Type="string" Value="ewBCADgARQA0AEIAOABFAEUALQAyADYAOAAzAC0ANAA5AEIARAAtAEIARQAzADIALQA1ADQAQwBDADIAQgA0ADgAMQBEAEEAMQB9AAAAAAE="/>
-				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value="ewBDADUAOAAxADYAOABGADgALQA5ADYANABCAC0ANAA2AEQAMAAtADkAOAAxAEMALQAwAEMAMQA1ADIAMQA2AEQARAA1ADUARgB9AAAAAAE="/>
+				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value="ewAwAEMAQQBFADUAMgA2ADAALQA4AEIANgA4AC0ANAAwADIAMgAtADkANgA0ADkALQA2ADgARgAyADMAQQA3AEIAOABFAEEANAB9AAAAAAE="/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\x64_ProjectExplorer2LastExpandedState" Type="string" Value="iC8JJ1oiVBFnJcijTz1EguraiCN1l8ZGou3FIio5d1ZJUtulGfFURrh26r9ouOss+LunXsBkUEqIIaB+i+IdaCOgvlUSOmhImgVT3DIPJpJm0/5JMLWoQpk7kkhzqrcH"/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel2\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
