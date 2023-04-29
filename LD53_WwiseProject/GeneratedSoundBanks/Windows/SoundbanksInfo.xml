@@ -22,6 +22,37 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{39F04B92-1556-EB9C-78B3-377F1BA13C05}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="327501103" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_location_01.wav</ShortName>
+					<CachePath>SFX/amb_location_01_61B828AF.wem</CachePath>
+				</File>
+				<File Id="477539199" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mus_mainmenu_01.wav</ShortName>
+					<CachePath>SFX/mus_mainmenu_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="858772338" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mus_mainmenu_02.wav</ShortName>
+					<CachePath>SFX/mus_mainmenu_02_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3627746619" Name="AMB_Location_01" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="327501103"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3149643052" Name="MUS_Menu" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="477539199"/>
+						<MediaRef Id="858772338"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{728B0CF1-C3AD-A635-6DAF-778047395964}</FileHash>
+	<FileHash>{20532A33-B104-4206-729B-BA0ECAB774F2}</FileHash>
 </SoundBanksInfo>
