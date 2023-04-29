@@ -1,9 +1,9 @@
 using UnityEngine;
 
-[RequireComponent(typeof(MonsterNavMesh), typeof(MonsterChasing))]
+[RequireComponent(typeof(MonsterPatrol), typeof(MonsterChasing))]
 public class MonsterController : MonoBehaviour
 {
-    private MonsterNavMesh _monsterNavMesh;
+    private MonsterPatrol _monsterNavMesh;
     private MonsterChasing _monsterChasing;
 
     private void OnEnable()
@@ -14,7 +14,7 @@ public class MonsterController : MonoBehaviour
 
     private void Awake()
     {
-        _monsterNavMesh = GetComponent<MonsterNavMesh>();
+        _monsterNavMesh = GetComponent<MonsterPatrol>();
         _monsterChasing = GetComponent<MonsterChasing>();
     }
 

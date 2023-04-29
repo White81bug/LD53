@@ -4,7 +4,7 @@ using UnityEngine.AI;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(NavMeshAgent))]
-public sealed class MonsterNavMesh : MonoBehaviour
+public sealed class MonsterPatrol : MonoBehaviour
 {
     [SerializeField] private Transform[] _waypoints;
     [SerializeField] private int _startWaypoint;
