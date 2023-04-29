@@ -59,7 +59,7 @@ public sealed class MonsterPatrol : MonoBehaviour
 
     private void GotoNextPoint()
     {
-        Debug.Log("Goto");
+        //Debug.Log("Goto");
         if (_waypoints.Length == 0)
         {
             Debug.LogError("Zero waypoints!");
