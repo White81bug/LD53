@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Player interaction with ICollectable.
 /// </summary>
-public class PlayerCollect : MonoBehaviour, ICollect
+public class PlayerCollect : MonoBehaviour
 {
     private ICollectable _collectableObject;
 
