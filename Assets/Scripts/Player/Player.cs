@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private List<Collectable> _collectables;
+    private List<CollectableObject> _collectables;
     private Transform collectoblesParent;
     private MovementController _movementController;
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
         
     }
 
-    public void TakeCollectable(Collectable collectable)
+    public void TakeCollectable(CollectableObject collectable)
     {
         _collectables.Add(collectable);
         collectable.transform.SetParent(collectoblesParent);

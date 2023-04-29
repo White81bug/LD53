@@ -7,12 +7,14 @@ using UnityEngine;
 /// </summary>
 public class PlayerCollect : MonoBehaviour, ICollect
 {
-    public void Drop()
+    private ICollectable _collectableObject;
+
+    public void Take()
     {
         throw new System.NotImplementedException();
     }
 
-    public void Take()
+    public void Drop()
     {
         throw new System.NotImplementedException();
     }
