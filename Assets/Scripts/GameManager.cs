@@ -6,7 +6,8 @@ public sealed class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    //[Header("Scripts")]
+    [Header("Scripts")]
+    public TransformParentManager TransformParentManager;
 
     private void Awake()
     {
