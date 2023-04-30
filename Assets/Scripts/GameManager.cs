@@ -26,7 +26,16 @@ public sealed class GameManager : MonoBehaviour
         else Destroy(this);
 
         isStarted = false;
-        SceneManager.sceneLoaded += OnSceneLoaded(SceneManager.GetActiveScene());
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+    {
+        if (scene.name == "Game")
+        {
+            Debug.Log("prokatilo");
+            SetStatement(1);
+        }
     }
 
     public void SetStatement(int value)
@@ -78,13 +87,7 @@ public sealed class GameManager : MonoBehaviour
         StartCoroutine(LoadSceneAsync(sceneName));
     }
 
-    void OnSceneLoaded(Scene scene)
-    {
-        if (scene == Scene.GameScene)
-        {
-            SetStatement(1);
-        }
-    }
+    
 
     private IEnumerator LoadSceneAsync(string sceneName)
     {
