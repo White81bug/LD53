@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class QuestGiver : MonoBehaviour
+public class QuestTrigger : MonoBehaviour
 {
-    [SerializeField] private bool questGiven = false;
-    public Quest quest;
     public PlayerQuestHolder player;
 
-   
+    [Header("Physics")]
     private Collider _collider;
-   [SerializeField] private bool _inTrigger;
+    [SerializeField] private bool _inTrigger;
 
     private InputActions interactActions;
     private PlayerInput _input;
@@ -21,20 +19,18 @@ public class QuestGiver : MonoBehaviour
         _collider = GetComponent<BoxCollider>();
         interactActions = new InputActions();
         interactActions.Enable();
-       interactActions.Player.Interact.performed += AcceptQuest;
-       interactActions.Disable();
+        interactActions.Player.Interact.performed += AdvanceQuest;
+        interactActions.Disable();
       
     }
     
-    private void AcceptQuest(InputAction.CallbackContext ctx)
+    private void AdvanceQuest(InputAction.CallbackContext ctx)
     {
         if(!_inTrigger) return;
-        if(player.quest != null) {Debug.Log("Already has quest"); return;}
-        if(questGiven) return;
-        Debug.Log("Accepted");
-        quest.isActive = true;
-        player.quest = quest;
-        questGiven = true;
+        if(player.quest == null) return;
+        if(player.quest.Goal.GoalType.ToString() != InteractableType.ToString()) return;
+        Debug.Log("Quest Advanced");
+        player.quest.Goal.StageCompleted();
     }
  
     private void OnTriggerEnter(Collider other)
@@ -56,4 +52,10 @@ public class QuestGiver : MonoBehaviour
         }
     }
 
+   public InteractableType InteractableType;
+}
+public enum InteractableType
+{
+    Interact,
+    Gather
 }
