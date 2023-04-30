@@ -105,7 +105,7 @@
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -214,6 +214,638 @@
 								<ActiveSource Name="amb_location_01" ID="{967A5C3E-793F-4BD6-9FEF-62E22B0387B0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="WinLose" ID="{28416104-804A-4191-ABCC-EC5B5A9039D4}" ShortID="717873357">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="WinLoseBus" ID="{DA9BD618-7E3E-45ED-9148-0DB1B0C709DA}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Win" ID="{8CEA816B-3C61-4C0A-8A13-66359D8FC64F}" ShortID="1036783319">
+							<PropertyList>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Win" ID="{96BA5F55-B7F0-4AB1-98B8-DDF7397C18CC}" ShortID="673856661">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Win" ID="{2D0BF579-92AE-464D-B318-F597581E6B4A}">
+											<Language>SFX</Language>
+											<AudioFile>Win.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="214061265"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Win" ID="{2D0BF579-92AE-464D-B318-F597581E6B4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="mus_mainmenu_02" ID="{E305BE7E-9598-4B8B-B6D1-61CA54A50A54}" ShortID="1020232209">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_mainmenu_02" ID="{B937DC55-4AC9-42E0-81BC-30786DA164C4}">
+											<Language>SFX</Language>
+											<AudioFile>mus_mainmenu_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="858772338"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_mainmenu_02" ID="{B937DC55-4AC9-42E0-81BC-30786DA164C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Win" ID="{96BA5F55-B7F0-4AB1-98B8-DDF7397C18CC}"/>
+								<ItemRef Name="mus_mainmenu_02" ID="{E305BE7E-9598-4B8B-B6D1-61CA54A50A54}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<Sound Name="Lose" ID="{B645B827-C0CF-42EB-9B05-C9C81D43DDC3}" ShortID="127437823">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lose" ID="{C3B53D08-9377-4300-A5F4-907FF04B1F36}">
+									<Language>SFX</Language>
+									<AudioFile>Lose.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="631581429"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lose" ID="{C3B53D08-9377-4300-A5F4-907FF04B1F36}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Wind" ID="{DBFDB9CC-10B6-4289-A5B9-1E92624D7A13}" ShortID="631820441">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Wind" ID="{9673E302-5664-4D45-8DFE-3E0B043F150E}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Dust" ID="{A3472087-45D2-4C86-BCB3-DFCAB056928A}" ShortID="1003921888">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6C276175-78A6-4C0F-945B-C6456F653E4A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="16"/>
+													<Property Name="Min" Type="Real64" Value="-18"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0D0C7530-02C2-4DCC-A593-1AA4C79DAA2A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="13"/>
+													<Property Name="Min" Type="Real64" Value="-13"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7E17BE31-0533-4F84-AC85-C5925072C1A9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="707"/>
+													<Property Name="Min" Type="Real64" Value="-707"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C01962D6-07BA-4B82-9940-EF22DF7BD49A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{485C599A-5A78-4EA2-8780-F9A5578A9B50}" ShortID="593624566">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{0C484781-350A-4FFB-9E3A-2D3254A8A0DC}">
+											<Language>SFX</Language>
+											<AudioFile>Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="666330763"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{0C484781-350A-4FFB-9E3A-2D3254A8A0DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1" ID="{2FD232E9-D60B-4DE4-B324-3ADDDDE292DD}" ShortID="852247774">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1" ID="{82B984D6-F706-427B-AE2C-065D6B5CDEAC}">
+											<Language>SFX</Language>
+											<AudioFile>Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="248543126"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1" ID="{82B984D6-F706-427B-AE2C-065D6B5CDEAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dirt &amp; Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1" ID="{9063DDD5-AA5C-4EF0-A7FD-92CFFA655EEA}" ShortID="902607477">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt &amp; Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1" ID="{FCF8FDC7-B4DB-4986-BFD1-E3BE68C4A430}">
+											<Language>SFX</Language>
+											<AudioFile>Dirt &amp; Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="890744551"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt &amp; Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1" ID="{FCF8FDC7-B4DB-4986-BFD1-E3BE68C4A430}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence" ID="{78F16696-AC1B-4E6E-9875-B846B7F8A53D}" ShortID="890515819">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{613FC90D-B40C-43E8-B16F-EA07A9F868BF}" ShortID="443970491" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="LengthMax" Type="Real32" Value="2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{613FC90D-B40C-43E8-B16F-EA07A9F868BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_02" ID="{85FCA4F0-8902-4958-84C8-BCB8CA20C899}" ShortID="117860418">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{29BF704E-E7A0-4DD8-899A-E52EF5160526}" ShortID="990562241" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="LengthMax" Type="Real32" Value="1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{29BF704E-E7A0-4DD8-899A-E52EF5160526}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_03" ID="{7D09167B-F0D4-42FC-A92D-D8F15A29F2AA}" ShortID="4853629">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{767FE9C6-8AB9-41D3-B4E8-4AB65AB944FA}" ShortID="919623103" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="LengthMax" Type="Real32" Value="0.5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{767FE9C6-8AB9-41D3-B4E8-4AB65AB944FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wind" ID="{E57FFEA3-A9C5-4B7F-942B-CDBF96D2887A}" ShortID="625118125">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{49ED9763-45B5-4C9F-A5D5-75A6A8C83647}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="17"/>
+													<Property Name="Min" Type="Real64" Value="-17"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{46F5FC16-B966-4596-AB54-352DB97D3E4E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="15"/>
+													<Property Name="Min" Type="Real64" Value="-17"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2AEA8739-F001-4E6D-8534-1BF1CC02F487}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="758"/>
+													<Property Name="Min" Type="Real64" Value="-783"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9409A2E5-ECE1-49B1-89E4-C351B93AF372}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wind, Gust, Designed, Polar, Snow Storm 03 SND54164" ID="{2060B4E8-FAC2-4E53-962F-EE6D2763D356}" ShortID="948635847">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Gust, Designed, Polar, Snow Storm 03 SND54164" ID="{58C553DD-6F21-4C9E-BDCC-0E14896CFD48}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.640622293486172"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.584916007096069"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Gust, Designed, Polar, Snow Storm 03 SND54164.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="913623480"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Gust, Designed, Polar, Snow Storm 03 SND54164" ID="{58C553DD-6F21-4C9E-BDCC-0E14896CFD48}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind, Gust, Designed, Polar, Snow Storm 04 SND54163" ID="{0F7477D1-E797-4171-B7B7-C700745A83B7}" ShortID="985606694">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Gust, Designed, Polar, Snow Storm 04 SND54163" ID="{2266F65B-2EB5-4367-AFD2-FC2149FDC705}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.732471865902474"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.23363682678311"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Gust, Designed, Polar, Snow Storm 04 SND54163.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="733318528"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Gust, Designed, Polar, Snow Storm 04 SND54163" ID="{2266F65B-2EB5-4367-AFD2-FC2149FDC705}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind, Gust, Designed, Polar, Snow Storm 06 SND54161" ID="{7DFBE045-79F5-4845-9B18-4469E1CB91CB}" ShortID="784008321">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Gust, Designed, Polar, Snow Storm 06 SND54161" ID="{10F053D2-090F-447E-BCD5-82D1B5761540}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.603517876637555"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.56627258460699"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Gust, Designed, Polar, Snow Storm 06 SND54161.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="458163175"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Gust, Designed, Polar, Snow Storm 06 SND54161" ID="{10F053D2-090F-447E-BCD5-82D1B5761540}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159" ID="{4C3E9AA0-BF0F-48B9-9206-2A17D5C1A13F}" ShortID="957295721">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159" ID="{30B5A202-53B5-45D2-AAC5-B5AAC22B252E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="4.4124250363901"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.3185480349345"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306575263"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159" ID="{30B5A202-53B5-45D2-AAC5-B5AAC22B252E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind, Interior, Howling, Tempest, Wind 02 SND54295" ID="{55315944-45D8-4DF1-8FCC-514506DFB694}" ShortID="568871807">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Interior, Howling, Tempest, Wind 02 SND54295" ID="{88993F7A-3788-4428-B9A5-45AF5D223282}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.79256319368632"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.15638278975619"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Interior, Howling, Tempest, Wind 02 SND54295.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748498315"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Interior, Howling, Tempest, Wind 02 SND54295" ID="{88993F7A-3788-4428-B9A5-45AF5D223282}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind, Interior, Howling, Tempest, Wind 01 SND54296" ID="{243B7DBE-9398-451A-AF36-7C47A83C5CF7}" ShortID="362029372">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Interior, Howling, Tempest, Wind 01 SND54296" ID="{F1C6221C-C355-457B-A926-F269A01FED5C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.26675136462882"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.65198830967977"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Interior, Howling, Tempest, Wind 01 SND54296.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="863795930"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Interior, Howling, Tempest, Wind 01 SND54296" ID="{F1C6221C-C355-457B-A926-F269A01FED5C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind, Gust, Designed, Polar, Snow Storm 05 SND54162" ID="{6AAB929D-60A1-4808-A9BF-B423034E3424}" ShortID="358902573">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Gust, Designed, Polar, Snow Storm 05 SND54162" ID="{8F4A6E97-DB35-4442-82DA-CE85458509F2}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.79946595251092"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.27175627729257"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.2148534616084"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Gust, Designed, Polar, Snow Storm 05 SND54162.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="670212554"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Gust, Designed, Polar, Snow Storm 05 SND54162" ID="{8F4A6E97-DB35-4442-82DA-CE85458509F2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Wind, Gust, Designed, Polar, Snow Storm 03 SND54164" ID="{2060B4E8-FAC2-4E53-962F-EE6D2763D356}"/>
+								<ItemRef Name="Wind, Gust, Designed, Polar, Snow Storm 04 SND54163" ID="{0F7477D1-E797-4171-B7B7-C700745A83B7}"/>
+								<ItemRef Name="Wind, Gust, Designed, Polar, Snow Storm 05 SND54162" ID="{6AAB929D-60A1-4808-A9BF-B423034E3424}"/>
+								<ItemRef Name="Wind, Gust, Designed, Polar, Snow Storm 06 SND54161" ID="{7DFBE045-79F5-4845-9B18-4469E1CB91CB}"/>
+								<ItemRef Name="Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159" ID="{4C3E9AA0-BF0F-48B9-9206-2A17D5C1A13F}"/>
+								<ItemRef Name="Wind, Interior, Howling, Tempest, Wind 01 SND54296" ID="{243B7DBE-9398-451A-AF36-7C47A83C5CF7}"/>
+								<ItemRef Name="Wind, Interior, Howling, Tempest, Wind 02 SND54295" ID="{55315944-45D8-4DF1-8FCC-514506DFB694}"/>
+							</Playlist>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
