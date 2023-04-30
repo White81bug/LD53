@@ -75,7 +75,9 @@ public sealed class CollectingZone : MonoBehaviour
     {
         if (_colliders.Contains(gameObject.GetComponent<Collider>()))
         {
-            _collectablesCounter[gameObject.GetComponent<CollectableObject>().Type] += 1;
+            //_collectablesCounter[gameObject.GetComponent<CollectableObject>().Type] += 1;
+            gameObject.GetComponent<QuestTrigger>().AdvanceQuest();
+            gameObject.GetComponent<CollectableObject>().InZone = true;
         }
         //Debug.Log($"Food - {_collectablesCounter[CollectableObject.CollectableType.Food]}, Scheme -  {_collectablesCounter[CollectableObject.CollectableType.Scheme]}");
     }

@@ -29,7 +29,7 @@ public class InputManager : MonoBehaviour
 
         if (CanMove & moveVec != Vector2.zero)
         {
-            Debug.Log("Moving");
+            //Debug.Log("Moving");
             var moveDir = new Vector3(moveVec.x, 0.0f, moveVec.y);
             var forward = _cameraController.transform.forward;
             var right = _cameraController.transform.right;

@@ -62,18 +62,25 @@ public sealed class PlayerCollect : MonoBehaviour
         if(!QuestHolder.canPickUp) return;
         if (_currentObject == null && _collectableObjects.Count >= 1)
         {
-            Debug.Log("took");
             _currentObject = AdditionalMath.FindClosestGameObject(transform, _collectableObjects);
-            _currentObject.transform.position = _pointOfObject.transform.position;
-            _currentObject.transform.SetParent(_pointOfObject);
-            OnTakeObject?.Invoke(_currentObject);
+            if (!_currentObject.GetComponent<CollectableObject>().InZone)
+            {
+                Debug.Log("took");
+                _currentObject.transform.position = _pointOfObject.transform.position;
+                _currentObject.transform.SetParent(_pointOfObject);
+                OnTakeObject?.Invoke(_currentObject);
+            }
+            else
+            {
+                _currentObject = null;
+            }
         }
-        else
-        {
-            Debug.Log("didn't take");
-            Debug.Log(_currentObject);
-            Debug.Log(_collectableObjects.Count);
-        }
+        //else
+        //{
+        //    Debug.Log("didn't take");
+        //    Debug.Log(_currentObject);
+        //    Debug.Log(_collectableObjects.Count);
+        //}
     }
 
     private void Drop()
