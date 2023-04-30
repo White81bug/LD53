@@ -17,7 +17,6 @@
 								<Property Name="MaxDuckVolume" Type="Real64" Value="-17"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="1.5"/>
 							</PropertyList>
-							<ReferenceList/>
 							<DuckingList>
 								<DuckItem>
 									<BusRef Name="UiBus" ID="{ACEE33AF-FB29-44E9-A58D-03A2CD87AE00}"/>
@@ -31,6 +30,8 @@
 							</DuckingList>
 						</Bus>
 						<Bus Name="UiBus" ID="{ACEE33AF-FB29-44E9-A58D-03A2CD87AE00}"/>
+						<Bus Name="WinLoseBus" ID="{DA9BD618-7E3E-45ED-9148-0DB1B0C709DA}"/>
+						<Bus Name="Wind" ID="{9673E302-5664-4D45-8DFE-3E0B043F150E}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
