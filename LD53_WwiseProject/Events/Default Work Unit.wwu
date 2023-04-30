@@ -62,6 +62,46 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Win" ID="{5B24F9E1-B308-4BAA-A92C-CF5B19A84CA0}">
+					<ChildrenList>
+						<Action Name="" ID="{5F7740B2-F534-4994-8AB5-28A46970E6C1}" ShortID="200884164">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win" ID="{8CEA816B-3C61-4C0A-8A13-66359D8FC64F}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lose" ID="{273B41A9-453F-42B7-8BCE-D83838065F8D}">
+					<ChildrenList>
+						<Action Name="" ID="{0A773170-E03C-459B-8335-CEE7EC36AB6B}" ShortID="363050597">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lose" ID="{B645B827-C0CF-42EB-9B05-C9C81D43DDC3}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wind" ID="{1FD52E96-3DE9-448B-A188-8A166F56325B}">
+					<ChildrenList>
+						<Action Name="" ID="{BD5FEC95-0F45-4FCC-8300-0B57D28DFEB3}" ShortID="103800211">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{E57FFEA3-A9C5-4B7F-942B-CDBF96D2887A}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4B866EAA-00B2-4F5D-88F3-1227D97806D4}" ShortID="960090976">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dust" ID="{A3472087-45D2-4C86-BCB3-DFCAB056928A}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
