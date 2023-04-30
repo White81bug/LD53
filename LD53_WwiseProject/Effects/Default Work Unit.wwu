@@ -8,6 +8,7 @@
 						<Property Name="FrequencyBand1" Type="Real32" Value="20"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="SideChainMeter" ID="{D571580C-D684-47DE-B2C6-3D3D9F8F91A2}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
