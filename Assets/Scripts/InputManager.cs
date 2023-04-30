@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
+    public bool CanMove;
+
     private MovementController _movementController;
     private CameraController _cameraController;
 
@@ -11,6 +13,8 @@ public class InputManager : MonoBehaviour
     private PlayerInput _input;
     void Awake()
     {
+        CanMove = true;
+
         _input = GetComponent<PlayerInput>();
         _movementController = GetComponent<MovementController>();
         _cameraController = FindObjectOfType<CameraController>();
@@ -23,8 +27,9 @@ public class InputManager : MonoBehaviour
         Vector2 moveVec = _input.actions.FindAction("Move").ReadValue<Vector2>();
         #region PlayerMovement
 
-        if (moveVec != Vector2.zero)
+        if (CanMove & moveVec != Vector2.zero)
         {
+            Debug.Log("Moving");
             var moveDir = new Vector3(moveVec.x, 0.0f, moveVec.y);
             var forward = _cameraController.transform.forward;
             var right = _cameraController.transform.right;
