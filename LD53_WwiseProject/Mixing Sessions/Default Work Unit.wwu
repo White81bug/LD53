@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{68254F85-1109-42A4-A703-C50AA780C748}" SchemaVersion="110">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{68254F85-1109-42A4-A703-C50AA780C748}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{68254F85-1109-42A4-A703-C50AA780C748}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Mix" ID="{E818033B-059A-4CBB-9BB8-9277B0DAE1C9}">
+					<ObjectList>
+						<ObjectRef Name="MusicBus" ID="{650F45F1-CD29-4260-B6C8-F23E23D0DB40}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+						<ObjectRef Name="MusicAux" ID="{0D3EC688-05C4-4831-9AA7-3DDD3CF49CF7}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+						<ObjectRef Name="UIAux" ID="{DEDFF8D1-FC51-407C-9D85-073C8A7B680F}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+						<ObjectRef Name="Ambience" ID="{8C90C77B-9519-4B9E-B707-C41FEF081876}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+						<ObjectRef Name="Music" ID="{F392199F-4981-4560-B68A-167E3678057D}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+						<ObjectRef Name="UI" ID="{B241794E-D674-4F40-84F0-13CA4E773FC7}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
