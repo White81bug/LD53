@@ -19,14 +19,14 @@ public sealed class CollectingZone : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager.Instance.PlayerCollect.OnDropObject.AddListener(CheckDrop);
-        GameManager.Instance.PlayerCollect.OnTakeObject.AddListener(CheckTake);
+        ScriptManager.Instance.PlayerCollect.OnDropObject.AddListener(CheckDrop);
+        ScriptManager.Instance.PlayerCollect.OnTakeObject.AddListener(CheckTake);
     }
 
     private void OnDisable()
     {
-        GameManager.Instance.PlayerCollect.OnDropObject.RemoveListener(CheckDrop);
-        GameManager.Instance.PlayerCollect.OnTakeObject.RemoveListener(CheckTake);
+        ScriptManager.Instance.PlayerCollect.OnDropObject.RemoveListener(CheckDrop);
+        ScriptManager.Instance.PlayerCollect.OnTakeObject.RemoveListener(CheckTake);
     }
 
     private void OnTriggerEnter(Collider other)

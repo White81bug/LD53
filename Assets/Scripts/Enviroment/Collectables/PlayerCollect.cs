@@ -74,7 +74,7 @@ public sealed class PlayerCollect : MonoBehaviour
                 _currentObject.transform.position = hit.point;
             else Debug.LogError("Physics.Raycast didn't found floor.");
 
-            _currentObject.transform.SetParent(GameManager.Instance.TransformParentManager.CollectableObjectsParent);
+            _currentObject.transform.SetParent(ScriptManager.Instance.TransformParentManager.CollectableObjectsParent);
             OnDropObject?.Invoke(_currentObject);
             _currentObject = null;
         }
