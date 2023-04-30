@@ -16,9 +16,12 @@ public sealed class PlayerCollect : MonoBehaviour
     public UnityEvent<GameObject> OnTakeObject;
     public UnityEvent<GameObject> OnDropObject;
 
+    private PlayerQuestHolder QuestHolder;
+
     private void Awake()
     {
         _collectableObjects = new List<GameObject>();
+        QuestHolder = GetComponent<PlayerQuestHolder>();
     }
 
     private void Update()
@@ -56,6 +59,7 @@ public sealed class PlayerCollect : MonoBehaviour
 
     private void Take()
     {
+        if(!QuestHolder.canPickUp) return;
         if (_currentObject == null && _collectableObjects.Count >= 1)
         {
             Debug.Log("took");
