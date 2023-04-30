@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5200972948971592577}
   - component: {fileID: 4472247170649496261}
-  - component: {fileID: 2338525292098697892}
   - component: {fileID: 987297629}
   - component: {fileID: 987297630}
+  - component: {fileID: 8981216618675831523}
   m_Layer: 0
   m_Name: ---Scripts---
   m_TagString: Untagged
@@ -53,18 +53,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollectableObjectsParent: {fileID: 0}
---- !u!114 &2338525292098697892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4472247170649496262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc6b962f2bf270f4fb0a5dc74ef16727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &987297629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TransformParentManager: {fileID: 4472247170649496261}
   PlayerCollect: {fileID: 0}
-  InputManager: {fileID: 2338525292098697892}
+  InputManager: {fileID: 0}
 --- !u!114 &987297630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,3 +87,17 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   showTime: 2
   oxySlider: {fileID: 0}
+--- !u!114 &8981216618675831523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472247170649496262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863e8d199d5fda24da843bab283b8243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _oxygenData: {fileID: 11400000, guid: e8f295e428cb68c46950c02b4256a974, type: 2}
+  _breathDecreaseMultiplier: 0.05
