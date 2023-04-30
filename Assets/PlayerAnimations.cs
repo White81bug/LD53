@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
@@ -7,7 +8,6 @@ public class PlayerAnimations : MonoBehaviour
     private void Awake()
     {
         _animator = GetComponent<Animator>();
-        Debug.Log("animator enabled");
     }
 
     private void OnEnable()
@@ -27,7 +27,16 @@ public class PlayerAnimations : MonoBehaviour
 
     public void PickingUpAnimation(GameObject _)
     {
-        Debug.Log("hi");
-        _animator.SetTrigger("Pickup");
+        ScriptManager.Instance.InputManager.CanMove = false;
+        _animator.SetBool("IsPickuping", true);
+        StartCoroutine(PickingUp());
+    }
+
+    private IEnumerator PickingUp()
+    {
+        yield return new WaitForSeconds(3.33f); // CONST
+        Debug.Log("end of wait");
+        _animator.SetBool("IsPickuping", false);
+        ScriptManager.Instance.InputManager.CanMove = true;
     }
 }

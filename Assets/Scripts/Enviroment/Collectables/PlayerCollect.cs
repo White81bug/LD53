@@ -40,7 +40,7 @@ public sealed class PlayerCollect : MonoBehaviour
             if (!_collectableObjects.Contains(other.gameObject))
             {
                 _collectableObjects.Add(other.gameObject);
-                //Debug.Log("Added");
+                Debug.Log("Added");
             }
         }
     }
@@ -50,13 +50,13 @@ public sealed class PlayerCollect : MonoBehaviour
         if (other.GetComponent<CollectableObject>())
         {
             _collectableObjects.Remove(other.gameObject);
-            //Debug.Log("Removed");
+            Debug.Log("Removed");
         }
     }
 
     private void Take()
     {
-        if (_currentObject is null && _collectableObjects.Count >= 1)
+        if (_currentObject == null && _collectableObjects.Count >= 1)
         {
             Debug.Log("took");
             _currentObject = AdditionalMath.FindClosestGameObject(transform, _collectableObjects);
@@ -66,13 +66,15 @@ public sealed class PlayerCollect : MonoBehaviour
         }
         else
         {
-            Debug.Log("didn't took");
+            Debug.Log("didn't take");
+            Debug.Log(_currentObject);
+            Debug.Log(_collectableObjects.Count);
         }
     }
 
     private void Drop()
     {
-        if (_currentObject is not null)
+        if (_currentObject != null)
         {
             RaycastHit hit;
             if (Physics.Raycast(_currentObject.transform.position, Vector3.down, out hit))
