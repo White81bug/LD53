@@ -11,8 +11,9 @@ public sealed class CollectingZone : MonoBehaviour
     private void Awake()
     {
         _collectablesCounter = new Dictionary<CollectableObject.CollectableType, int>();
-        _collectablesCounter.Add(CollectableObject.CollectableType.Scheme, 0);
-        _collectablesCounter.Add(CollectableObject.CollectableType.Food, 0);
+        _collectablesCounter.Add(CollectableObject.CollectableType.Any, 0);
+        //_collectablesCounter.Add(CollectableObject.CollectableType.Scheme, 0);
+        //_collectablesCounter.Add(CollectableObject.CollectableType.Food, 0);
 
         _colliders = new List<Collider>();
     }

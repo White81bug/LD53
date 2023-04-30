@@ -11,7 +11,8 @@ public sealed class CollectableObject : MonoBehaviour, ICollectable
 
     public enum CollectableType
     {
-        Food,
-        Scheme
+        Any,
+        //Food,
+        //Scheme
     }
 }
