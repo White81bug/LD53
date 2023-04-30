@@ -36,9 +36,6 @@ public class InputManager : MonoBehaviour
 
             _movementController.Move(desiredMoveDirection);
         }
-        else
-            _movementController.Stay();
-
 
         if (_input.actions.FindAction("Dash").WasPressedThisFrame())
             _movementController.StartCoroutine("Dash");

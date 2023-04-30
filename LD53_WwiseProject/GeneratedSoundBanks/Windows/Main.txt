@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3149643052	MUS_Menu			\Default Work Unit\MUS_Menu	
+	3627746619	AMB_Location_01			\Default Work Unit\AMB_Location_01	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	327501103	amb_location_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\amb_location_01_61B828AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_location_01		35288436
+	477539199	mus_mainmenu_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\mus_mainmenu_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUS_Menu\mus_mainmenu_01		2422676
+	858772338	mus_mainmenu_02	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\mus_mainmenu_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUS_Menu\mus_mainmenu_02		4915296
+

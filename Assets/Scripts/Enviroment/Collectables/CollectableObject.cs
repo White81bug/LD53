@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
-public class CollectableObject : MonoBehaviour, ICollectable
+public sealed class CollectableObject : MonoBehaviour, ICollectable
 {
     public CollectableType Type => _type;
     public float Slowdown => _slowdown;
