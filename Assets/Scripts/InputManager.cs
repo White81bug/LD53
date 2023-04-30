@@ -38,11 +38,9 @@ public class InputManager : MonoBehaviour
 
             _movementController.Move(desiredMoveDirection);
             _playerAnimations.WalkingAnimation(true);
-            Debug.Log("Not Zero");
         }
         else
         {
-            Debug.Log("Zero");
             _movementController.Move(Vector3.zero);
             _playerAnimations.WalkingAnimation(false);
         }
