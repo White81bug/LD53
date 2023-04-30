@@ -58,10 +58,15 @@ public sealed class PlayerCollect : MonoBehaviour
     {
         if (_currentObject is null && _collectableObjects.Count >= 1)
         {
+            Debug.Log("took");
             _currentObject = AdditionalMath.FindClosestGameObject(transform, _collectableObjects);
             _currentObject.transform.position = _pointOfObject.transform.position;
             _currentObject.transform.SetParent(_pointOfObject);
             OnTakeObject?.Invoke(_currentObject);
+        }
+        else
+        {
+            Debug.Log("didn't took");
         }
     }
 
