@@ -12,4 +12,5 @@ public class Quest
     public string description;
 
     public QuestGoal Goal;
+    
 }
