@@ -6,12 +6,16 @@ public class InputManager : MonoBehaviour
     private MovementController _movementController;
     private CameraController _cameraController;
 
+    private PlayerAnimations _playerAnimations;
+
     private PlayerInput _input;
     void Awake()
     {
-        _input = FindObjectOfType<PlayerInput>();
-        _movementController = FindObjectOfType<MovementController>();
+        _input = GetComponent<PlayerInput>();
+        _movementController = GetComponent<MovementController>();
         _cameraController = FindObjectOfType<CameraController>();
+
+        _playerAnimations = GetComponent<PlayerAnimations>();
     }
 
     void Update()
@@ -32,10 +36,16 @@ public class InputManager : MonoBehaviour
 
             var desiredMoveDirection = forward * moveDir.z + right * moveDir.x;
 
-
             _movementController.Move(desiredMoveDirection);
+            _playerAnimations.WalkingAnimation(true);
+            Debug.Log("Not Zero");
         }
-        else _movementController.Move(Vector3.zero);
+        else
+        {
+            Debug.Log("Zero");
+            _movementController.Move(Vector3.zero);
+            _playerAnimations.WalkingAnimation(false);
+        }
 
         if (_input.actions.FindAction("Dash").WasPressedThisFrame())
             _movementController.StartCoroutine("Dash");
