@@ -25,6 +25,83 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="UI" ID="{11811C28-EC62-4FF6-B62F-B60F6944F952}" ShortID="50898977">
+					<ChildrenList>
+						<Event Name="UI_Click" ID="{D06F607A-313B-4117-9993-474567481929}">
+							<ChildrenList>
+								<Action Name="" ID="{B57E0FA4-F36D-4046-BD97-EE6E6491EDCA}" ShortID="505392834">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Click" ID="{E6CACFB9-ADAB-47E9-9DCD-158A2006A174}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Hover" ID="{0EAAB9C6-1ACF-497A-8973-6806BAC33EEC}">
+							<ChildrenList>
+								<Action Name="" ID="{2E0AC79E-3CB1-4BA6-992D-5EA798B530CB}" ShortID="857901478">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_hover" ID="{0BBA587D-2FD7-4BF4-A319-730553E7DE5D}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_NewGame" ID="{EED40404-E778-41A0-9299-0F7CC1985406}">
+							<ChildrenList>
+								<Action Name="" ID="{24508AAD-1FF3-476F-A22C-E79930C511EB}" ShortID="895600028">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Click_NewGame" ID="{CE7D3567-934C-44E5-995D-7B038A00E142}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Win" ID="{5B24F9E1-B308-4BAA-A92C-CF5B19A84CA0}">
+					<ChildrenList>
+						<Action Name="" ID="{5F7740B2-F534-4994-8AB5-28A46970E6C1}" ShortID="200884164">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win" ID="{8CEA816B-3C61-4C0A-8A13-66359D8FC64F}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lose" ID="{273B41A9-453F-42B7-8BCE-D83838065F8D}">
+					<ChildrenList>
+						<Action Name="" ID="{0A773170-E03C-459B-8335-CEE7EC36AB6B}" ShortID="363050597">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lose" ID="{B645B827-C0CF-42EB-9B05-C9C81D43DDC3}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wind" ID="{1FD52E96-3DE9-448B-A188-8A166F56325B}">
+					<ChildrenList>
+						<Action Name="" ID="{BD5FEC95-0F45-4FCC-8300-0B57D28DFEB3}" ShortID="103800211">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{E57FFEA3-A9C5-4B7F-942B-CDBF96D2887A}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4B866EAA-00B2-4F5D-88F3-1227D97806D4}" ShortID="960090976">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dust" ID="{A3472087-45D2-4C86-BCB3-DFCAB056928A}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
