@@ -14,6 +14,11 @@ public class QuestGoal
     {
         return (currentAmount >= requiredAmount);
     }
+
+    public void StageCompleted()
+    {
+        currentAmount++;
+    }
 }
 
 public enum GoalType
