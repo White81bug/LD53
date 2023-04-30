@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Slider))]
+
 public class Oxygen : MonoBehaviour
 {
     public static Oxygen Instance;
@@ -20,14 +20,20 @@ public class Oxygen : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(this);
-        
+        NoOxygen += StopBreathing;
         UIManager.Instance.SetSliderMax(_oxygenData.MaxOxygenAmount);
     }
 
     public void StartBreathing()
     {
+        _oxygenData.CurrentOxygenAmount = _oxygenData.MaxOxygenAmount;
         _breathing = Breathing();
         StartCoroutine(_breathing);
+    }
+
+    private void StopBreathing()
+    {
+        GameManager.Instance.SetStatement(3);
     }
 
     private IEnumerator Breathing()

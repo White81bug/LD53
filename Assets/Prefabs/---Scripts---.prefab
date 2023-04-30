@@ -8,9 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4472247170649496263}
+  - component: {fileID: 5200972948971592577}
   - component: {fileID: 4472247170649496261}
   - component: {fileID: 2338525292098697892}
+  - component: {fileID: 987297629}
+  - component: {fileID: 987297630}
   m_Layer: 0
   m_Name: ---Scripts---
   m_TagString: Untagged
@@ -18,8 +20,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4472247170649496263
-Transform:
+--- !u!224 &5200972948971592577
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -33,6 +35,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4472247170649496261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,3 +65,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6b962f2bf270f4fb0a5dc74ef16727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &987297629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472247170649496262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7604c6837aa3f44abf873eb415387b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransformParentManager: {fileID: 4472247170649496261}
+  PlayerCollect: {fileID: 0}
+  InputManager: {fileID: 2338525292098697892}
+--- !u!114 &987297630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472247170649496262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa079573e767764694c1d87194bfc39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 0}
+  lossScreen: {fileID: 0}
+  winScreen: {fileID: 0}
+  dialogueWindow: {fileID: 0}
+  dialogueText: {fileID: 0}
+  showTime: 2
+  oxySlider: {fileID: 0}

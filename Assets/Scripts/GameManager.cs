@@ -33,7 +33,7 @@ public sealed class GameManager : MonoBehaviour
     {
         if (scene.name == "Game")
         {
-            Debug.Log("prokatilo");
+           // Debug.Log("prokatilo");
             SetStatement(1);
         }
     }
