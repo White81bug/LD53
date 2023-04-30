@@ -6,12 +6,12 @@ public sealed class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     private bool isStarted;
-    private State _curState = State.Play;
+    private State _curState = State.Pause;
     public enum State
     {
         Pause,
-        Win,
         Play,
+        Win,
         Lose
     }
     public enum Scene
@@ -26,11 +26,12 @@ public sealed class GameManager : MonoBehaviour
         else Destroy(this);
 
         isStarted = false;
+        SceneManager.sceneLoaded += OnSceneLoaded(SceneManager.GetActiveScene());
     }
 
-    public void SetStatement(State state)
+    public void SetStatement(int value)
     {
-        _curState = state;
+        _curState = (State)value;
         switch (_curState)
         {
             case State.Play: Play(); break;
@@ -43,7 +44,6 @@ public sealed class GameManager : MonoBehaviour
     private void Play()
     {
         //выключить экран паузы
-        UIManager.Instance.DisablePauseScreen();
         if (!isStarted)
         {
             UIManager.Instance.EnableSlider();
@@ -52,12 +52,13 @@ public sealed class GameManager : MonoBehaviour
             isStarted = true;
         }
         else{Time.timeScale = 1;}
+        UIManager.Instance.DisablePauseScreen();
     }
     private void Pause()
     {
         Time.timeScale = 0;
         //включаем экран паузы.
-        UIManager.Instance.EnablePauseScreen();
+        if(isStarted)UIManager.Instance.EnablePauseScreen();
     }
     private void Win()
     {
@@ -71,10 +72,23 @@ public sealed class GameManager : MonoBehaviour
         //Экран проигрыша
         UIManager.Instance.EnableLossScreen();
     }
-
-    public IEnumerator LoadSceneAsync(Scene scene)
+    
+    public void LoadScene(string sceneName)
     {
-        var async = SceneManager.LoadSceneAsync(scene.ToString());
+        StartCoroutine(LoadSceneAsync(sceneName));
+    }
+
+    void OnSceneLoaded(Scene scene)
+    {
+        if (scene == Scene.GameScene)
+        {
+            SetStatement(1);
+        }
+    }
+
+    private IEnumerator LoadSceneAsync(string sceneName)
+    {
+        var async = SceneManager.LoadSceneAsync(sceneName);
         async.allowSceneActivation = false;
 
         while (async.progress < 0.9f)
@@ -83,5 +97,9 @@ public sealed class GameManager : MonoBehaviour
         async.allowSceneActivation = true;
 
     }
-    
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }

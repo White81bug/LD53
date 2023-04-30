@@ -77,4 +77,9 @@ public class UIManager : MonoBehaviour
     {
         lossScreen.SetActive(true);
     }
+
+    public void ReturnToMenu(string sceneName)
+    {
+        GameManager.Instance.LoadScene(sceneName);
+    }
 }
