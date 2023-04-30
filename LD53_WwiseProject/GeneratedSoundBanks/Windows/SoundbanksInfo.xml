@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C9A21DE4-3551-40E3-A71E-599E58170EB0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,24 +19,42 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="1372881427" Name="UiBus"/>
+				<Bus Id="2886307548" Name="MusicBus"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1640882099" Name="UIAux"/>
+				<AuxBus Id="3155190748" Name="MusicAux"/>
+			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{39F04B92-1556-EB9C-78B3-377F1BA13C05}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D0BA1F79-C1B4-8FB7-1B19-B6268732DED6}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="146646628" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Click_NewGame.wav</ShortName>
+					<CachePath>SFX/UI_Click_NewGame_10C4C929.wem</CachePath>
+				</File>
 				<File Id="327501103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>amb_location_01.wav</ShortName>
-					<CachePath>SFX/amb_location_01_61B828AF.wem</CachePath>
+					<CachePath>SFX/amb_location_01_62AE07D0.wem</CachePath>
 				</File>
 				<File Id="477539199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mus_mainmenu_01.wav</ShortName>
 					<CachePath>SFX/mus_mainmenu_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="710587988" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Click.wav</ShortName>
+					<CachePath>SFX/UI_Click_10C4C929.wem</CachePath>
+				</File>
 				<File Id="858772338" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mus_mainmenu_02.wav</ShortName>
 					<CachePath>SFX/mus_mainmenu_02_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="918305144" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_hover.wav</ShortName>
+					<CachePath>SFX/UI_hover_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -50,9 +68,36 @@
 						<MediaRef Id="477539199"/>
 						<MediaRef Id="858772338"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3155190748" Name="MusicAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2249769530" Name="UI_Click" DurationType="OneShot" DurationMin="0.16179167" DurationMax="0.16179167">
+					<MediaRefs>
+						<MediaRef Id="710587988"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1640882099" Name="UIAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2118900976" Name="UI_Hover" DurationType="OneShot" DurationMin="0.17758334" DurationMax="0.17758334">
+					<MediaRefs>
+						<MediaRef Id="918305144"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1640882099" Name="UIAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2240351934" Name="UI_NewGame" DurationType="OneShot" DurationMin="6.5116873" DurationMax="6.5116873">
+					<MediaRefs>
+						<MediaRef Id="146646628"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1640882099" Name="UIAux"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{20532A33-B104-4206-729B-BA0ECAB774F2}</FileHash>
+	<FileHash>{1ECC4EB3-F3D1-9CEC-760E-1CA8B99C1DE1}</FileHash>
 </SoundBanksInfo>
