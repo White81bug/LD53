@@ -14,6 +14,8 @@ public class QuestTrigger : MonoBehaviour
     private InputActions interactActions;
     private PlayerInput _input;
 
+    private bool _interacted;
+
     protected virtual void Awake()
     {
         _collider = GetComponent<BoxCollider>();
@@ -21,16 +23,17 @@ public class QuestTrigger : MonoBehaviour
         interactActions.Enable();
         interactActions.Player.Interact.performed += AdvanceQuest;
         interactActions.Disable();
-      
     }
     
     private void AdvanceQuest(InputAction.CallbackContext ctx)
     {
+        if (_interacted) return;
         if(!_inTrigger) return;
         if(player.quest == null) return;
         if(player.quest.Goal.GoalType.ToString() != InteractableType.ToString()) return;
         Debug.Log("Quest Advanced");
         player.quest.Goal.StageCompleted();
+        _interacted = true;
     }
  
     private void OnTriggerEnter(Collider other)
