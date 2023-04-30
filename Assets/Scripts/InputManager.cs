@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-
     private MovementController _movementController;
     private CameraController _cameraController;
 
@@ -36,6 +35,7 @@ public class InputManager : MonoBehaviour
 
             _movementController.Move(desiredMoveDirection);
         }
+        else _movementController.Move(Vector3.zero);
 
         if (_input.actions.FindAction("Dash").WasPressedThisFrame())
             _movementController.StartCoroutine("Dash");
@@ -57,5 +57,4 @@ public class InputManager : MonoBehaviour
 
         #endregion
     }
-    
 }
