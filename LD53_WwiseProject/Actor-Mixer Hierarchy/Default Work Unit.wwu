@@ -202,6 +202,11 @@
 						<Sound Name="amb_location_01" ID="{0CC3D1D6-1F7B-47D7-8AE0-AADFFA95AF54}" ShortID="872541834">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1507,6 +1512,76 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="Oxygen_Tone" ID="{FE7C255E-ECAD-47DA-AFA6-959379A67FDD}" ShortID="1028061350">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+							<ObjectRef Name="New_Guitar_Distortion" ID="{BC4D452E-36CB-4658-B2A8-6EA5509130A6}" WorkUnitID="{84D5C799-907E-41F5-98BF-024D9B436A31}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Tone Generator" ID="{211F9671-BD96-4330-97B8-34EA103CC2BD}" ShortID="975870958" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{43848422-7598-4046-A4D5-E15717B6D090}" ShortID="155176218">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Oxygen" ID="{D03F3C83-8746-443E-ABA1-31708367C71A}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{234DE60E-22A7-4DAD-AB51-AFCFD885DD66}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-1.14286</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>20.49093</XPos>
+																<YPos>-37.26646</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Tone Generator" ID="{211F9671-BD96-4330-97B8-34EA103CC2BD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

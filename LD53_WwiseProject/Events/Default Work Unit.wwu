@@ -158,6 +158,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Oxygen" ID="{77752E43-7345-4FC2-959F-31BCB1F4B9EA}">
+							<ChildrenList>
+								<Action Name="" ID="{5B56D305-5869-45A5-831F-9ED104092857}" ShortID="894549760">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Oxygen_Tone" ID="{FE7C255E-ECAD-47DA-AFA6-959379A67FDD}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="EnemyZone" ID="{57192E36-F35F-476A-AAB4-16189EF5A6DF}">

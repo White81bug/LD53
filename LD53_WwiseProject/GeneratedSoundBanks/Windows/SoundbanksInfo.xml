@@ -33,7 +33,7 @@
 				<GameParameter Id="3660512661" Name="Oxygen"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F331BB3C-E2FD-78AF-25E5-3019B11269F5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{83242B71-14DF-FB34-5117-E629616C005B}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -65,8 +65,9 @@
 					<ShortName>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3.wav</ShortName>
 					<CachePath>SFX/Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3_23350B12.wem</CachePath>
 				</File>
-				<File Id="327501103" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="327501103" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>amb_location_01.wav</ShortName>
+					<Path>Media/327501103.wem</Path>
 					<CachePath>SFX/amb_location_01_C6043D73.wem</CachePath>
 				</File>
 				<File Id="395438971" Language="SFX" Streaming="false" Location="Memory">
@@ -291,5 +292,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2DFC93F2-AD33-E479-476A-495F493F7BFC}</FileHash>
+	<FileHash>{BA7EF8D6-FC4C-7B33-041C-36A1F6D5A0F3}</FileHash>
 </SoundBanksInfo>

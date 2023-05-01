@@ -29,7 +29,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	248543126	Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1		75834
 	306575263	Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159_4C7927B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159		508364
 	322576149	Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3		19520
-	327501103	amb_location_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\amb_location_01_C6043D73.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\amb_location_01		2691907
 	395438971	bag2_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\bag2_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Bag\bag2_01		7195
 	458163175	Wind, Gust, Designed, Polar, Snow Storm 06 SND54161	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 06 SND54161_232E5B3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 06 SND54161		189292
 	477539199	mus_mainmenu_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\mus_mainmenu_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\MUS_Menu\mus_mainmenu_01		139730
@@ -56,4 +55,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	933419192	footstep_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footstep_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footstep_01		4124
 	1026049036	bag1_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\bag1_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Bag\bag1_01		7174
 	1043909902	pre_footstep_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\pre_footstep_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\preFootstep\pre_footstep_01		2635
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	327501103	amb_location_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\amb_location_01_C6043D73.wem	327501103.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\amb_location_01	
 
