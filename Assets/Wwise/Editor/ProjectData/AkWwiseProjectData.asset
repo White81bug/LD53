@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bc83ad18bc482c4e81af402c8737b396
     GuidInternal: 
-    m_lastTime: -8585189812306148471
+    m_lastTime: -8585188530475934657
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4952dba519f15446b876eabf68b8eb2c
     GuidInternal: 
-    m_lastTime: -8585186362450678878
+    m_lastTime: -8585186338276699435
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,9 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 92aee432e1a3c0449357e2cac0e66ba1
     GuidInternal: 
-
-    m_lastTime: -8585186297918235220
-
+    m_lastTime: -8585186515398690153
     List:
     - name: Main
       guid: eeb8e4b88326bd49be3254cc2b481da1
@@ -96,9 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 74d255e04480b84ea4118031516b9a26
     GuidInternal: 
-
-    m_lastTime: -8585186287360691228
-
+    m_lastTime: -8585186308653418645
     List:
     - name: AMB_Location_01
       guid: a5e63bc156a5c54ea042fc4d8610baf9
@@ -117,7 +113,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-
     - name: EnemyZone
       guid: 362e19575ff36a47aab416189ef5a6df
       id: 465612373
@@ -169,7 +164,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-
     - name: Obj_collect
       guid: 79d88e9002ae3946b4d7f1e0800dd1f5
       id: 2333350319
@@ -230,7 +224,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: pc_footstep
+    - name: PC_footstep
       guid: c9978c791a725a45bbd451d0881c070d
       id: 979341015
       PathAndIcons:
@@ -243,10 +237,10 @@ MonoBehaviour:
       - ElementName: Player
         ObjectType: 4
         guid: f6a2ebd9a63f674c854ce4cc0ca2f7b6
-      - ElementName: pc_footstep
+      - ElementName: PC_footstep
         ObjectType: 3
         guid: c9978c791a725a45bbd451d0881c070d
-      Path: Events\Default Work Unit\Player\pc_footstep
+      Path: Events\Default Work Unit\Player\PC_footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -267,7 +261,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-
     - name: UI
       guid: 281c811162ecf64fb62fb60f6944f952
       id: 1551306167
@@ -391,8 +384,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 916bf3713404ee4190fe42b57a2689d2
     GuidInternal: 
-
-    m_lastTime: -8585186330751371067
+    m_lastTime: -8585186308653418645
     List:
     - name: Oxygen
       guid: 833c3fd046873e44aba131708367c71a
@@ -436,7 +428,6 @@ MonoBehaviour:
         ObjectType: 13
         guid: 9372d033eac270479f282ea6308bb91c
       Path: Game Parameters\Default Work Unit\PauseMenuVolume
-
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -449,9 +440,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 80eddc88d72615488827730ddcc53a58
     GuidInternal: 
-
-    m_lastTime: -8585189812305669436
-
+    m_lastTime: -8585188530475949682
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -465,9 +454,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 464af60ede2f3749960f8e2c3bd04762
     GuidInternal: 
-
-    m_lastTime: -8585189812306412370
-
+    m_lastTime: -8585188530475939717
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -481,13 +468,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bb81eb0387a2004ca2b83aac3407f525
     GuidInternal: 
-
-    m_lastTime: -8585189812306238493
-
+    m_lastTime: -8585188530475939717
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
