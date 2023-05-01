@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using  UnityEngine.UI;
+using UnityEngine.Video;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    
+
+    [SerializeField] private VideoPlayer _videoPlayer;
+
     [SerializeField] private GameObject pauseUI;
 
     [SerializeField] private GameObject lossScreen;
@@ -70,7 +73,33 @@ public class UIManager : MonoBehaviour
 
     public void EnableWinScreen()
     {
+        oxySlider.gameObject.SetActive(false);
+        StartCoroutine(Video());
+    }
+
+    private IEnumerator Video()
+    {
+        Time.timeScale = 1;
+        _videoPlayer.Play();
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(37f);
+        Time.timeScale = 1;
         winScreen.SetActive(true);
+        Time.timeScale = 1;
+        //Debug.Log("start cor");
+        //_videoPlayer.Prepare();
+        //WaitForSeconds waitTime = new WaitForSeconds(1);
+        //while (!_videoPlayer.isPrepared)
+        //{
+        //    yield return waitTime;
+        //    break;
+        //}
+        //_videoPlayer.Play();
+        //if (!_videoPlayer.isPlaying)
+        //{
+        //    Debug.Log("not");
+        //    winScreen.SetActive(true);
+        //}
     }
 
     public void EnableLossScreen()
