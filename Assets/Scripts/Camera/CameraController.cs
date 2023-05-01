@@ -70,16 +70,12 @@ public class CameraController : MonoBehaviour
         float rotationAroundYAxis = -direction.x  *rotSpeed; // camera moves horizontally
         float rotationAroundXAxis = direction.y *rotSpeed; // camera moves vertically camera moves vertically
 
-        cam.transform.Rotate(new Vector3(1, 0, 0), rotationAroundXAxis);
-        cam.transform.position = target.position;
-        cam.transform.Rotate(new Vector3(0, 1, 0), rotationAroundYAxis,
-            Space.World); // <— This is what makes it work!
-            
-        cam.transform.Translate(new Vector3(0, 0, -distanceToTarget));
-            
-        var a = transform.rotation;
-        a.eulerAngles = new Vector3(Math.Clamp(transform.rotation.eulerAngles.x, minVerticalRotation, maxVerticalRotation),a.eulerAngles.y,0) ;
-        transform.rotation = a;
+        var a = transform;
+
+        transform.eulerAngles += new Vector3(1, 0, 0) * rotationAroundXAxis;
+        transform.eulerAngles = new Vector3(Math.Clamp(transform.rotation.eulerAngles.x, minVerticalRotation, maxVerticalRotation),a.eulerAngles.y,0) ;
+        transform.eulerAngles += new Vector3(0, 1, 0) * rotationAroundYAxis;
+        transform.eulerAngles = new Vector3(Math.Clamp(transform.rotation.eulerAngles.x, minVerticalRotation, maxVerticalRotation),a.eulerAngles.y,0) ;
             
         previousPosition = newPosition;
         SaveChanges();

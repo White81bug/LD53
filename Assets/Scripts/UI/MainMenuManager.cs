@@ -6,10 +6,12 @@ using UnityEngine;
 public class MainMenuManager : MonoBehaviour
 {
   [SerializeField] private GameObject creditsScreen;
+  [SerializeField] private GameObject controlsScreen;
 
   private void Awake()
   {
     creditsScreen.SetActive(false);
+    controlsScreen.SetActive(false);
   }
 
   public void NewGame(string sName)
@@ -27,6 +29,14 @@ public class MainMenuManager : MonoBehaviour
   public void HideCredits()
   {
     creditsScreen.SetActive(false);
+  }
+  public void ShowControls()
+  {
+    controlsScreen.SetActive(true);
+  }
+  public void HideControls()
+  {
+    controlsScreen.SetActive(false);
   }
 
   #region Sound
