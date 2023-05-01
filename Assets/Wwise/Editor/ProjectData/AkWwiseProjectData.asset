@@ -66,7 +66,9 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 92aee432e1a3c0449357e2cac0e66ba1
     GuidInternal: 
+
     m_lastTime: -8585186297918235220
+
     List:
     - name: Main
       guid: eeb8e4b88326bd49be3254cc2b481da1
@@ -94,7 +96,9 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 74d255e04480b84ea4118031516b9a26
     GuidInternal: 
+
     m_lastTime: -8585186287360691228
+
     List:
     - name: AMB_Location_01
       guid: a5e63bc156a5c54ea042fc4d8610baf9
@@ -113,6 +117,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+
     - name: EnemyZone
       guid: 362e19575ff36a47aab416189ef5a6df
       id: 465612373
@@ -164,6 +169,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+
     - name: Obj_collect
       guid: 79d88e9002ae3946b4d7f1e0800dd1f5
       id: 2333350319
@@ -261,6 +267,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+
     - name: UI
       guid: 281c811162ecf64fb62fb60f6944f952
       id: 1551306167
@@ -384,6 +391,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 916bf3713404ee4190fe42b57a2689d2
     GuidInternal: 
+
     m_lastTime: -8585186330751371067
     List:
     - name: Oxygen
@@ -428,6 +436,7 @@ MonoBehaviour:
         ObjectType: 13
         guid: 9372d033eac270479f282ea6308bb91c
       Path: Game Parameters\Default Work Unit\PauseMenuVolume
+
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -440,7 +449,9 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 80eddc88d72615488827730ddcc53a58
     GuidInternal: 
+
     m_lastTime: -8585189812305669436
+
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -454,7 +465,9 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 464af60ede2f3749960f8e2c3bd04762
     GuidInternal: 
+
     m_lastTime: -8585189812306412370
+
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -468,7 +481,9 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bb81eb0387a2004ca2b83aac3407f525
     GuidInternal: 
+
     m_lastTime: -8585189812306238493
+
     List: []
   ExpandedFileSystemItemIds: 0200000003000000
   ExpandedWaapiItemIds: 
