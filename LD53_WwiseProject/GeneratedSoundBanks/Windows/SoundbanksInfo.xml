@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A5136658-984D-5A31-FC75-8AC5FECE845A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{07DB80F1-E685-F93E-941E-7211BECA30F5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -28,16 +28,22 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="625099702" Name="PauseMenuVolume"/>
+				<GameParameter Id="2409417334" Name="PauseMenuFilter"/>
 				<GameParameter Id="3660512661" Name="Oxygen"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B9E1F632-5EC5-75FC-2B6B-4168D3D0D6E5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DCC8AD79-610A-7030-D107-FD55919B7970}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="42087678" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footspep_02.wav</ShortName>
 					<CachePath>SFX/footspep_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="136270247" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Enemy_Mus.wav</ShortName>
+					<CachePath>SFX/Enemy_Mus_47EE711F.wem</CachePath>
 				</File>
 				<File Id="146646628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Click_NewGame.wav</ShortName>
@@ -54,6 +60,10 @@
 				<File Id="306575263" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159.wav</ShortName>
 					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159_678DDD86.wem</CachePath>
+				</File>
+				<File Id="322576149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3.wav</ShortName>
+					<CachePath>SFX/Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="327501103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>amb_location_01.wav</ShortName>
@@ -103,6 +113,10 @@
 					<ShortName>UI_Click.wav</ShortName>
 					<CachePath>SFX/UI_Click_10C4C929.wem</CachePath>
 				</File>
+				<File Id="724677281" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4.wav</ShortName>
+					<CachePath>SFX/Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="733318528" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm 04 SND54163.wav</ShortName>
 					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 04 SND54163_288ADC92.wem</CachePath>
@@ -115,6 +129,10 @@
 					<ShortName>Object collect.wav</ShortName>
 					<CachePath>SFX/Object collect_10C4C929.wem</CachePath>
 				</File>
+				<File Id="787692856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1.wav</ShortName>
+					<CachePath>SFX/Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1_10C4C929.wem</CachePath>
+				</File>
 				<File Id="858772338" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mus_mainmenu_02.wav</ShortName>
 					<CachePath>SFX/mus_mainmenu_02_D79FB2B7.wem</CachePath>
@@ -126,6 +144,10 @@
 				<File Id="890744551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dirt &amp; Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1.wav</ShortName>
 					<CachePath>SFX/Dirt &amp; Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="906682752" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2.wav</ShortName>
+					<CachePath>SFX/Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="913623480" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm 03 SND54164.wav</ShortName>
@@ -155,6 +177,9 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="443970491" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="466617862" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="556675280" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="795429543" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="919623103" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="976708773" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="990562241" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
@@ -165,6 +190,22 @@
 					<MediaRefs>
 						<MediaRef Id="327501103"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="465612373" Name="EnemyZone" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="136270247"/>
+						<MediaRef Id="322576149"/>
+						<MediaRef Id="724677281"/>
+						<MediaRef Id="787692856"/>
+						<MediaRef Id="906682752"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="466617862"/>
+							<PluginRef Id="556675280"/>
+							<PluginRef Id="795429543"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="221232726" Name="Lose" DurationType="OneShot" DurationMin="8.953938" DurationMax="8.953938">
 					<MediaRefs>
@@ -250,5 +291,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{92324C7D-F000-A0A4-9E33-5B5D11654149}</FileHash>
+	<FileHash>{267CE6FE-D3BC-73C6-60D9-BC2FD5A6056B}</FileHash>
 </SoundBanksInfo>
