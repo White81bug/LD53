@@ -115,7 +115,7 @@
 				</Event>
 				<Folder Name="Player" ID="{D9EBA2F6-3FA6-4C67-854C-E4CC0CA2F7B6}" ShortID="243219369">
 					<ChildrenList>
-						<Event Name="PC_footstep" ID="{798C97C9-721A-455A-BBD4-51D0881C070D}">
+						<Event Name="pc_footstep" ID="{798C97C9-721A-455A-BBD4-51D0881C070D}">
 							<ChildrenList>
 								<Action Name="" ID="{9D18B5C1-D277-43CE-BAB0-614FE3693CA5}" ShortID="80996164">
 									<ReferenceList>
@@ -135,13 +135,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Bag" ID="{F883A0AB-968B-466E-A296-C2DFCBA8FBB4}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{23B2F7AE-2050-47AC-AB7D-F3936F59291D}" ShortID="701260415">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Dust" ID="{EC2DB823-7275-4398-B8EE-18990F9630DE}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
