@@ -40,6 +40,7 @@ public sealed class GameManager : MonoBehaviour
 
     public void SetStatement(int value)
     {
+        Debug.Log($"set {value}");
         _curState = (State)value;
         switch (_curState)
         {
