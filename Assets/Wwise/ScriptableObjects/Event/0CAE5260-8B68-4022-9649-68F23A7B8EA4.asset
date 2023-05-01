@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3311ffec105f0794e8f49cb8bcf64dd4, type: 3}
+  m_Name: 0CAE5260-8B68-4022-9649-68F23A7B8EA4
+  m_EditorClassIdentifier: 
+  objectName: MUS_Menu
+  id: 3149643052
+  guid: 0CAE5260-8B68-4022-9649-68F23A7B8EA4

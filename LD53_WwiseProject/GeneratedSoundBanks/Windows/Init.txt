@@ -1,15 +1,4 @@
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	625099702	PauseMenuVolume			\Default Work Unit\PauseMenuVolume	
-	2409417334	PauseMenuFilter			\Default Work Unit\PauseMenuFilter	
-	3660512661	Oxygen			\Default Work Unit\Oxygen	
-
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	263959058	Ambince			\Default Work Unit\Master Audio Bus\Ambince	
-	864638068	WinLoseBus			\Default Work Unit\Master Audio Bus\WinLoseBus	
-	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	
-	1372881427	UiBus			\Default Work Unit\Master Audio Bus\UiBus	
-	1537061107	Wind			\Default Work Unit\Master Audio Bus\Wind	
-	2886307548	MusicBus			\Default Work Unit\Master Audio Bus\MusicBus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

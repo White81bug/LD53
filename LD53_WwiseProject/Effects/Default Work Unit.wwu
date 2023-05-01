@@ -9,6 +9,57 @@
 					</PropertyList>
 				</Effect>
 				<Effect Name="SideChainMeter" ID="{D571580C-D684-47DE-B2C6-3D3D9F8F91A2}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+				<Effect Name="New_Guitar_Distortion" ID="{BC4D452E-36CB-4658-B2A8-6EA5509130A6}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{D1DEC9A8-26E8-46D9-B37A-86AD71E6DC34}" ShortID="131800908">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Rectification"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Oxygen" ID="{D03F3C83-8746-443E-ABA1-31708367C71A}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{0D75E261-8ADF-49F7-A0A4-B9EF3E17D9DB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>63.63636</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.14823</XPos>
+																<YPos>42.12358</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>14.0709</XPos>
+																<YPos>-92.72727</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
