@@ -4,6 +4,20 @@
 		<WorkUnit Name="Default Work Unit" ID="{335115EF-4CF1-4F52-A36C-04E9A60C751E}" PersistMode="Standalone">
 			<ChildrenList>
 				<Attenuation Name="Enemy" ID="{4319A441-2B07-44E7-86F4-9B4C6254049B}" ShortID="14249215">
+					<PropertyList>
+						<Property Name="ConeOuterAngle" Type="int32" Value="180"/>
+						<Property Name="ConeUse" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HeightSpreadEnable" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RadiusMax" Type="Real64" Value="75"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -18,7 +32,17 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>45.90319</XPos>
+											<YPos>-1.09801</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>74.9978571428572</XPos>
+											<YPos>-200</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>75</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -45,7 +69,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>75</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -94,6 +118,16 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>69.02502</XPos>
+											<YPos>82</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>98.96587</XPos>
+											<YPos>99</YPos>
+											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>100</XPos>

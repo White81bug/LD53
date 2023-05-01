@@ -1367,95 +1367,6 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Dust" ID="{EC2DB823-7275-4398-B8EE-18990F9630DE}" ShortID="925470495">
-											<PropertyList>
-												<Property Name="MakeUpGain" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{9E643C09-B6C6-4F84-B468-E497F8AF9B4F}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-0.5"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{188443FD-F381-4C1D-8368-E69FDA62E9CB}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="500"/>
-																	<Property Name="Min" Type="Real64" Value="-500"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="dust_01" ID="{69533EAC-7E0C-4F9F-AF6F-85B04502F6F8}" ShortID="562233841">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="dust_01" ID="{49A04E64-6562-4FB6-BA21-ED5D733C9350}">
-															<Language>SFX</Language>
-															<AudioFile>dust_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="695301052"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="dust_01" ID="{49A04E64-6562-4FB6-BA21-ED5D733C9350}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="dirt_02" ID="{23E1F34D-2BA2-42F9-A00D-F929AE92071E}" ShortID="317764296">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="dirt_02" ID="{392CD411-330E-4AC9-B0A2-31709ABBCA06}">
-															<Language>SFX</Language>
-															<AudioFile>dirt_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="668461636"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="dirt_02" ID="{392CD411-330E-4AC9-B0A2-31709ABBCA06}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Footstep" ID="{055352E4-4D93-4554-9886-006FC9B83D9C}" ShortID="901682888">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
@@ -1486,7 +1397,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="footstep_01" ID="{1368A312-863B-4343-AD36-9120CFD28893}" ShortID="615729030">
+												<Sound Name="04" ID="{1368A312-863B-4343-AD36-9120CFD28893}" ShortID="615729030">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -1515,7 +1426,7 @@
 														<ActiveSource Name="footstep_01" ID="{7CE2DE39-D015-43CD-8390-7636EA4AD6F6}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="footspep_02" ID="{157BAE9D-CFCE-4EF9-A7CD-573499FC3113}" ShortID="19564175">
+												<Sound Name="01" ID="{157BAE9D-CFCE-4EF9-A7CD-573499FC3113}" ShortID="19564175">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
@@ -1537,7 +1448,7 @@
 														<ActiveSource Name="footspep_02" ID="{4252C3AC-1548-48B7-BC27-6223723D09B6}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="footspep_03" ID="{DAF6865A-AA51-4297-8AD7-DE77A9C17872}" ShortID="686546445">
+												<Sound Name="02" ID="{DAF6865A-AA51-4297-8AD7-DE77A9C17872}" ShortID="686546445">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -1566,7 +1477,7 @@
 														<ActiveSource Name="footspep_03" ID="{268646FE-3742-4A37-B03E-027B4730AEF9}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="footspep_04" ID="{5F239845-2236-4302-81D0-A167B8850E9D}" ShortID="320670177">
+												<Sound Name="03" ID="{5F239845-2236-4302-81D0-A167B8850E9D}" ShortID="320670177">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -1667,10 +1578,30 @@
 				</Folder>
 				<Folder Name="Enemy" ID="{1BBEBA8F-3734-4315-A7D9-AF8B14C89581}" ShortID="560640298">
 					<ChildrenList>
-						<ActorMixer Name="EnemyActor" ID="{2A44B9FD-8D33-41D6-BDCA-8C13372D1F64}" ShortID="1032837924">
+						<RandomSequenceContainer Name="EnemyVoices" ID="{F54E95FF-E376-4216-A2CE-993E6239A2B1}" ShortID="717274213">
 							<PropertyList>
-								<Property Name="3DPosition" Type="int16" Value="2"/>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{34F26F2F-4BFC-4CCF-916D-FB6BAAD0E70E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1684,34 +1615,8 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="EnemyVoices" ID="{F54E95FF-E376-4216-A2CE-993E6239A2B1}" ShortID="717274213">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{34F26F2F-4BFC-4CCF-916D-FB6BAAD0E70E}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="150"/>
-															<Property Name="Min" Type="Real64" Value="-150"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{E33BE674-A275-45F2-BC3E-FF27C88A9E1C}" ShortID="983989705">
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Enemy" ID="{4319A441-2B07-44E7-86F4-9B4C6254049B}" WorkUnitID="{335115EF-4CF1-4F52-A36C-04E9A60C751E}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
 										</Reference>
@@ -1720,273 +1625,197 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{E33BE674-A275-45F2-BC3E-FF27C88A9E1C}" ShortID="983989705">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}">
-													<Language>SFX</Language>
-													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="787692856"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{AE96FDC6-544A-48AB-AAD1-55E6051D35DF}" ShortID="563838481">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}">
-													<Language>SFX</Language>
-													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="906682752"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{422E52C6-BD1D-4631-A98C-84467F85D55D}" ShortID="154588512">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}">
-													<Language>SFX</Language>
-													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="322576149"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{EB29CE71-FE05-48E9-B7FD-BD022EEF8EE6}" ShortID="872335312">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}">
-													<Language>SFX</Language>
-													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="724677281"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="silence_01" ID="{1E64CD60-0957-4855-9F80-308C0AC6FD62}" ShortID="381361900">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" ShortID="556675280" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="LengthMax" Type="Real32" Value="5"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="silence_02" ID="{B183D9A2-2C1D-4E18-A565-00DF4B886C40}" ShortID="847438774">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" ShortID="466617862" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="LengthMax" Type="Real32" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="silence_03" ID="{5F4623EF-B97D-42D9-9A02-D3FE0D1DCDD0}" ShortID="349143239">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" ShortID="795429543" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="LengthMax" Type="Real32" Value="1"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<Sound Name="Enemy_Mus" ID="{7D300D3F-E5E4-4A20-ADDB-C03CECD41406}" ShortID="365050795">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Enemy" ID="{4319A441-2B07-44E7-86F4-9B4C6254049B}" WorkUnitID="{335115EF-4CF1-4F52-A36C-04E9A60C751E}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.75040550595238"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.66720734126984"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="4.95072991071429"/>
-												<Property Name="TrimEnd" Type="Real64" Value="144.304608878968"/>
-											</PropertyList>
+										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}">
 											<Language>SFX</Language>
-											<AudioFile>Enemy_Mus.wav</AudioFile>
+											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="136270247"/>
+												<MediaID ID="787692856"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}" Platform="Linked"/>
+										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{AE96FDC6-544A-48AB-AAD1-55E6051D35DF}" ShortID="563838481">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}">
+											<Language>SFX</Language>
+											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906682752"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{422E52C6-BD1D-4631-A98C-84467F85D55D}" ShortID="154588512">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}">
+											<Language>SFX</Language>
+											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="322576149"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{EB29CE71-FE05-48E9-B7FD-BD022EEF8EE6}" ShortID="872335312">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}">
+											<Language>SFX</Language>
+											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="724677281"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="silence_01" ID="{1E64CD60-0957-4855-9F80-308C0AC6FD62}" ShortID="381361900">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" ShortID="556675280" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="LengthMax" Type="Real32" Value="5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="silence_02" ID="{B183D9A2-2C1D-4E18-A565-00DF4B886C40}" ShortID="847438774">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" ShortID="466617862" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="LengthMax" Type="Real32" Value="2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="silence_03" ID="{5F4623EF-B97D-42D9-9A02-D3FE0D1DCDD0}" ShortID="349143239">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" ShortID="795429543" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="LengthMax" Type="Real32" Value="1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<PositioningInfo>
-								<Position Name="" ID="{D667265C-F9FD-4085-9C1F-A0CB7BD68DCC}"/>
+								<Position Name="" ID="{465AC2B9-719F-4810-A30A-40F7214884F0}"/>
 							</PositioningInfo>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{8F83DD5D-C644-46A8-9CE8-03BE1AE318EE}" ShortID="561406471">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PauseMenuVolume" ID="{33D07293-C2EA-4770-9F28-2EA6308BB91C}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{B66736AE-F80D-49C9-A550-CA61E571E2C4}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{33F9A5AC-E303-44F4-834D-E38F1BD64FB1}" ShortID="180286024">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PauseMenuFilter" ID="{3DD8749A-B8E3-497B-853A-88833D0BF38B}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{2E4FA624-9534-4652-81D2-6011E5317467}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>55</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</ActorMixer>
+						</RandomSequenceContainer>
+						<Sound Name="Enemy_Mus" ID="{7D300D3F-E5E4-4A20-ADDB-C03CECD41406}" ShortID="365050795">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="52"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Enemy" ID="{4319A441-2B07-44E7-86F4-9B4C6254049B}" WorkUnitID="{335115EF-4CF1-4F52-A36C-04E9A60C751E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="3.86651208807798"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.66720734126984"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.8571029481539"/>
+										<Property Name="TrimEnd" Type="Real64" Value="144.304608878968"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Enemy_Mus.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="136270247"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{7E086CF5-71E3-4372-9E6D-71A6E7830D72}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Sound Name="Oxygen_Tone" ID="{FE7C255E-ECAD-47DA-AFA6-959379A67FDD}" ShortID="1028061350">
