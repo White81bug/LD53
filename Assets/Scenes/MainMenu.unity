@@ -207,8 +207,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 638987626}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1402857633}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -528,17 +528,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616697817}
   m_CullTransparentMesh: 1
---- !u!114 &638987626 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8832630861052298124, guid: d24267bafbdb4784c904a37108c9afac, type: 3}
-  m_PrefabInstance: {fileID: 330389336}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429641609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434ddd49510ddcb4a8cd9f780640d19d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &840196156
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,13 +932,25 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429641609}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1402857633}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: NewGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Game
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1402857633}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: PlayNewGameSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1269,11 +1270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditsScreen: {fileID: 2138410292}
---- !u!1 &1429641609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8832630861052298126, guid: d24267bafbdb4784c904a37108c9afac, type: 3}
-  m_PrefabInstance: {fileID: 330389336}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1481599048
 GameObject:
   m_ObjectHideFlags: 0

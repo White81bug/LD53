@@ -16,7 +16,6 @@ public class MainMenuManager : MonoBehaviour
   {
     GameManager.Instance.LoadScene(sName);
   }
-
   public void ExitGame()
   {
     GameManager.Instance.ExitGame();
@@ -25,10 +24,22 @@ public class MainMenuManager : MonoBehaviour
   {
     creditsScreen.SetActive(true);
   }
-
   public void HideCredits()
   {
     creditsScreen.SetActive(false);
   }
+
+  #region Sound
+
+  public void PlayNewGameSound()
+  {
+    
+  }
+
+  public void PlayClickSound()
+  {
+    
+  }
+  #endregion
 }
 
