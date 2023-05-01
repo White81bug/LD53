@@ -9,6 +9,7 @@ public sealed class MonsterChasing : MonoBehaviour
     public UnityAction OnStopChasing;
 
     [SerializeField, Min(0f)] private float _radiusOfDetecting;
+    [SerializeField, Min(0f)] private float _radiusOfDeath;
     [SerializeField, Min(0f)] private float _speed = 2f;
 
     private NavMeshAgent _agent;
@@ -20,8 +21,11 @@ public sealed class MonsterChasing : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, _radiusOfDetecting);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _radiusOfDeath);
     }
 
     private void Awake()
@@ -40,6 +44,12 @@ public sealed class MonsterChasing : MonoBehaviour
         if (_isChasing)
         {
             _agent.destination = _player.transform.position;
+
+            if (Vector3.Distance(_player.transform.position, transform.position) <= _radiusOfDeath)
+            {
+                //Debug.Log("Death!");
+                GameManager.Instance.SetStatement(3);
+            }
         }
     }
 

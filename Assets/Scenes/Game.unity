@@ -12129,6 +12129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _radiusOfDetecting: 5
+  _radiusOfDeath: 0
   _speed: 2
   _isChasing: 0
 --- !u!114 &1472661265
@@ -12729,6 +12730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _radiusOfDetecting: 30
+  _radiusOfDeath: 5
   _speed: 0.3
   _isChasing: 0
 --- !u!135 &1514987782
