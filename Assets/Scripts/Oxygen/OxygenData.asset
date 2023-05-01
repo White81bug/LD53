@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: OxygenData
   m_EditorClassIdentifier: 
   MaxOxygenAmount: 100
-  CurrentOxygenAmount: -0.065356076
+  CurrentOxygenAmount: 100

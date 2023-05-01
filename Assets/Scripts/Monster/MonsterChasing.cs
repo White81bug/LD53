@@ -9,19 +9,23 @@ public sealed class MonsterChasing : MonoBehaviour
     public UnityAction OnStopChasing;
 
     [SerializeField, Min(0f)] private float _radiusOfDetecting;
+    [SerializeField, Min(0f)] private float _radiusOfDeath;
     [SerializeField, Min(0f)] private float _speed = 2f;
 
     private NavMeshAgent _agent;
 
     private GameObject _player;
-    private bool _isChasing;
+    public bool _isChasing;
 
     private SphereCollider _sphereCollider;
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, _radiusOfDetecting);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _radiusOfDeath);
     }
 
     private void Awake()
@@ -40,12 +44,18 @@ public sealed class MonsterChasing : MonoBehaviour
         if (_isChasing)
         {
             _agent.destination = _player.transform.position;
+
+            if (Vector3.Distance(_player.transform.position, transform.position) <= _radiusOfDeath)
+            {
+                //Debug.Log("Death!");
+                GameManager.Instance.SetStatement(3);
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<MovementController>())
+        if (other.GetComponent<MovementControllerRedone>())
         {
             _player = other.gameObject;
             _isChasing = true;
@@ -55,7 +65,7 @@ public sealed class MonsterChasing : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<MovementController>())
+        if (other.GetComponent<MovementControllerRedone>())
         {
             _player = null;
             _isChasing = false;

@@ -3,16 +3,23 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
+    public bool CanMove;
 
     private MovementController _movementController;
     private CameraController _cameraController;
 
+    private PlayerAnimations _playerAnimations;
+
     private PlayerInput _input;
     void Awake()
     {
-        _input = FindObjectOfType<PlayerInput>();
-        _movementController = FindObjectOfType<MovementController>();
+        CanMove = true;
+
+        _input = GetComponent<PlayerInput>();
+        _movementController = GetComponent<MovementController>();
         _cameraController = FindObjectOfType<CameraController>();
+
+        _playerAnimations = GetComponent<PlayerAnimations>();
     }
 
     void Update()
@@ -20,8 +27,9 @@ public class InputManager : MonoBehaviour
         Vector2 moveVec = _input.actions.FindAction("Move").ReadValue<Vector2>();
         #region PlayerMovement
 
-        if (moveVec != Vector2.zero)
+        if (CanMove & moveVec != Vector2.zero)
         {
+            //Debug.Log("Moving");
             var moveDir = new Vector3(moveVec.x, 0.0f, moveVec.y);
             var forward = _cameraController.transform.forward;
             var right = _cameraController.transform.right;
@@ -33,8 +41,13 @@ public class InputManager : MonoBehaviour
 
             var desiredMoveDirection = forward * moveDir.z + right * moveDir.x;
 
-
             _movementController.Move(desiredMoveDirection);
+            _playerAnimations.WalkingAnimation(true);
+        }
+        else
+        {
+            _movementController.Move(Vector3.zero);
+            _playerAnimations.WalkingAnimation(false);
         }
 
         if (_input.actions.FindAction("Dash").WasPressedThisFrame())
@@ -57,5 +70,4 @@ public class InputManager : MonoBehaviour
 
         #endregion
     }
-    
 }
