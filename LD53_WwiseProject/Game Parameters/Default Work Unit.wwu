@@ -8,6 +8,8 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="PauseMenuFilter" ID="{3DD8749A-B8E3-497B-853A-88833D0BF38B}"/>
+				<GameParameter Name="PauseMenuVolume" ID="{33D07293-C2EA-4770-9F28-2EA6308BB91C}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
