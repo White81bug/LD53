@@ -81,6 +81,10 @@ public sealed class GameManager : MonoBehaviour
     {
         if (_curState != State.Pause)
         {
+            AkSoundEngine.SetRTPCValue("PauseMenuVolume", 80, GameObject.Find("MusBack"));
+            AkSoundEngine.SetRTPCValue("PauseMenuFilter", 100, GameObject.Find("MusBack"));
+
+
             _curState = State.Pause;
             Time.timeScale = 0;
             if (isStarted) UIManager.Instance.EnablePauseScreen();

@@ -84,7 +84,25 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionVolumeUsage>
 						<DiffractionLPFUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="DiffractionLPF" ID="{6998FB3A-F11E-41FE-BCC3-7FFEB9E5B3DA}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>100</XPos>
+											<YPos>100</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</DiffractionLPFUsage>
 						<DiffractionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>

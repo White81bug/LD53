@@ -268,6 +268,163 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{766346F2-FCAD-4686-9523-3440F286D129}" ShortID="844233348">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="PauseMenuVolume" ID="{33D07293-C2EA-4770-9F28-2EA6308BB91C}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{AF93CEA7-B6BA-4472-AAA0-A5FC5BFE4DA5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{73B7CFBF-4F4A-4600-BF05-E50CE7A426D5}" ShortID="935489499">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="PauseMenuFilter" ID="{3DD8749A-B8E3-497B-853A-88833D0BF38B}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E3FEFBE5-469F-4415-B179-59EA13AF0794}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>43</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{9FDA3C84-8F09-4048-9B8D-5F035282C3CE}" ShortID="876569745">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Oxygen" ID="{D03F3C83-8746-443E-ABA1-31708367C71A}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{78F8478F-1CE5-4F7F-8A54-8632358284EF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>14.90291</XPos>
+																<YPos>-8.43545</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>45</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{5E39C0BD-C3F0-4896-A2C9-F7D6663BDDDA}" ShortID="1018980463">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Oxygen" ID="{D03F3C83-8746-443E-ABA1-31708367C71A}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{853AE2F8-AD77-4B42-85DA-9FCC2C6AA18A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>73</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>13.54369</XPos>
+																<YPos>-0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>45</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</ActorMixer>
 				<ActorMixer Name="WinLose" ID="{28416104-804A-4191-ABCC-EC5B5A9039D4}" ShortID="717873357">
 					<ReferenceList>
@@ -908,6 +1065,162 @@
 							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{33AE9FA5-EF22-473A-BF63-B3EF18A1F49E}" ShortID="208575613">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="PauseMenuVolume" ID="{33D07293-C2EA-4770-9F28-2EA6308BB91C}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{16B579C8-730F-42B8-A01F-D3BBF5663E4F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3F1C1C92-F787-4069-9309-92F08017F315}" ShortID="291287341">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="PauseMenuFilter" ID="{3DD8749A-B8E3-497B-853A-88833D0BF38B}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{0CE971B6-7A43-430E-B596-1BC909C21CEF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>65</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{F23697F9-236F-4450-870C-562080CC09BA}" ShortID="755952929">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Oxygen" ID="{D03F3C83-8746-443E-ABA1-31708367C71A}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{7A249ABE-25A2-485D-BD92-E2934CC4FBFE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>14.61165</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>45</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{5BE30012-82AE-4EF6-910F-76F3363A49D5}" ShortID="347075367">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="PauseMenuFilter" ID="{3DD8749A-B8E3-497B-853A-88833D0BF38B}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{BA979C98-8E39-4895-B88D-7AA49E10CCED}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>64</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>31.06796</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</ActorMixer>
 				<Folder Name="Player" ID="{30D73273-BCF0-40D4-A92A-C36A9855FD89}" ShortID="1015917137">
 					<ChildrenList>
@@ -1354,29 +1667,9 @@
 				</Folder>
 				<Folder Name="Enemy" ID="{1BBEBA8F-3734-4315-A7D9-AF8B14C89581}" ShortID="560640298">
 					<ChildrenList>
-						<RandomSequenceContainer Name="EnemyVoices" ID="{F54E95FF-E376-4216-A2CE-993E6239A2B1}" ShortID="717274213">
+						<ActorMixer Name="EnemyActor" ID="{2A44B9FD-8D33-41D6-BDCA-8C13372D1F64}" ShortID="1032837924">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{34F26F2F-4BFC-4CCF-916D-FB6BAAD0E70E}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1390,194 +1683,309 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{E33BE674-A275-45F2-BC3E-FF27C88A9E1C}" ShortID="983989705">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="787692856"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{AE96FDC6-544A-48AB-AAD1-55E6051D35DF}" ShortID="563838481">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="906682752"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{422E52C6-BD1D-4631-A98C-84467F85D55D}" ShortID="154588512">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="322576149"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{EB29CE71-FE05-48E9-B7FD-BD022EEF8EE6}" ShortID="872335312">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="724677281"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="silence_01" ID="{1E64CD60-0957-4855-9F80-308C0AC6FD62}" ShortID="381361900">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" ShortID="556675280" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-											<PropertyList>
-												<Property Name="LengthMax" Type="Real32" Value="5"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="silence_02" ID="{B183D9A2-2C1D-4E18-A565-00DF4B886C40}" ShortID="847438774">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" ShortID="466617862" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-											<PropertyList>
-												<Property Name="LengthMax" Type="Real32" Value="2"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="silence_03" ID="{5F4623EF-B97D-42D9-9A02-D3FE0D1DCDD0}" ShortID="349143239">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" ShortID="795429543" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-											<PropertyList>
-												<Property Name="LengthMax" Type="Real32" Value="1"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<Sound Name="Enemy_Mus" ID="{7D300D3F-E5E4-4A20-ADDB-C03CECD41406}" ShortID="365050795">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Enemy" ID="{4319A441-2B07-44E7-86F4-9B4C6254049B}" WorkUnitID="{335115EF-4CF1-4F52-A36C-04E9A60C751E}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}">
+								<RandomSequenceContainer Name="EnemyVoices" ID="{F54E95FF-E376-4216-A2CE-993E6239A2B1}" ShortID="717274213">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="2.75040550595238"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="3.66720734126984"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="4.95072991071429"/>
-										<Property Name="TrimEnd" Type="Real64" Value="144.304608878968"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{34F26F2F-4BFC-4CCF-916D-FB6BAAD0E70E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Enemy_Mus.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="136270247"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy" ID="{4319A441-2B07-44E7-86F4-9B4C6254049B}" WorkUnitID="{335115EF-4CF1-4F52-A36C-04E9A60C751E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{E33BE674-A275-45F2-BC3E-FF27C88A9E1C}" ShortID="983989705">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}">
+													<Language>SFX</Language>
+													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="787692856"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1" ID="{1552B142-0B63-41AB-88C4-E48E7A198064}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{AE96FDC6-544A-48AB-AAD1-55E6051D35DF}" ShortID="563838481">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}">
+													<Language>SFX</Language>
+													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="906682752"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2" ID="{A30F25A2-B811-434C-A565-BDDE42929C2C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{422E52C6-BD1D-4631-A98C-84467F85D55D}" ShortID="154588512">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}">
+													<Language>SFX</Language>
+													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="322576149"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3" ID="{E46D5423-9737-4B92-AAE2-10BC8DBBA48B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{EB29CE71-FE05-48E9-B7FD-BD022EEF8EE6}" ShortID="872335312">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}">
+													<Language>SFX</Language>
+													<AudioFile>Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="724677281"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4" ID="{9E7CE89F-612B-4910-B1BB-C8524E114842}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="silence_01" ID="{1E64CD60-0957-4855-9F80-308C0AC6FD62}" ShortID="381361900">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" ShortID="556675280" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="LengthMax" Type="Real32" Value="5"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{CCD76E21-0747-4945-8927-514F63CAC680}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="silence_02" ID="{B183D9A2-2C1D-4E18-A565-00DF4B886C40}" ShortID="847438774">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" ShortID="466617862" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="LengthMax" Type="Real32" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{CEFEA35B-04F1-49EF-B76B-5ACE88137151}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="silence_03" ID="{5F4623EF-B97D-42D9-9A02-D3FE0D1DCDD0}" ShortID="349143239">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" ShortID="795429543" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="LengthMax" Type="Real32" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{42F5C5EE-8D51-42D9-9398-3920B2627D3A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Enemy_Mus" ID="{7D300D3F-E5E4-4A20-ADDB-C03CECD41406}" ShortID="365050795">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy" ID="{4319A441-2B07-44E7-86F4-9B4C6254049B}" WorkUnitID="{335115EF-4CF1-4F52-A36C-04E9A60C751E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7EEB676C-58B1-4F87-9D2F-1339B8F6A034}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5DB5249-F119-4654-B876-EABF68B8EB2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.75040550595238"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.66720734126984"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.95072991071429"/>
+												<Property Name="TrimEnd" Type="Real64" Value="144.304608878968"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Enemy_Mus.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="136270247"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Enemy_Mus" ID="{BA6EE449-3BA0-4852-BAB7-5C7C464AA74F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<PositioningInfo>
+								<Position Name="" ID="{D667265C-F9FD-4085-9C1F-A0CB7BD68DCC}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{8F83DD5D-C644-46A8-9CE8-03BE1AE318EE}" ShortID="561406471">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PauseMenuVolume" ID="{33D07293-C2EA-4770-9F28-2EA6308BB91C}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B66736AE-F80D-49C9-A550-CA61E571E2C4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{33F9A5AC-E303-44F4-834D-E38F1BD64FB1}" ShortID="180286024">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PauseMenuFilter" ID="{3DD8749A-B8E3-497B-853A-88833D0BF38B}" WorkUnitID="{71F36B91-0434-41EE-90FE-42B57A2689D2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{2E4FA624-9534-4652-81D2-6011E5317467}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>55</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 				<Sound Name="Oxygen_Tone" ID="{FE7C255E-ECAD-47DA-AFA6-959379A67FDD}" ShortID="1028061350">
@@ -1626,13 +2034,13 @@
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>20.49093</XPos>
-																<YPos>-37.26646</YPos>
+																<XPos>15.28888</XPos>
+																<YPos>-200</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>100</XPos>
+																<XPos>45</XPos>
 																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
