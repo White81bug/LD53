@@ -3903,11 +3903,12 @@ MonoBehaviour:
     questKey: Supplies
     Goal:
       GoalType: 1
-      requiredAmount: 5
+      requiredAmount: 10
       currentAmount: 0
   player: {fileID: 0}
   _inTrigger: 0
   _collectingZone: {fileID: 1724900015}
+  _collectingZoneText: {fileID: 571346800}
 --- !u!114 &508972177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4570,12 +4571,12 @@ GameObject:
   - component: {fileID: 571346803}
   - component: {fileID: 571346802}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: CollectedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &571346801
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4616,7 +4617,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Collected N/10
+  m_text: 'Collected 0/10
 
     (5 required to fly out)'
   m_isRightToLeft: 0
@@ -6484,6 +6485,7 @@ MonoBehaviour:
   player: {fileID: 0}
   _inTrigger: 0
   _collectingZone: {fileID: 0}
+  _collectingZoneText: {fileID: 0}
 --- !u!65 &768906681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8339,7 +8341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanMove: 0
-  speed: 50
+  speed: 12
   turnSmoothTime: 0.1
 --- !u!114 &1039016264
 MonoBehaviour:
@@ -15246,7 +15248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1724900016
 Transform:
   m_ObjectHideFlags: 0
@@ -15274,6 +15276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffadd5824675cf841aa3c6630a9e53c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _text: {fileID: 571346802}
+  _playerQuestHolder: {fileID: 1039016260}
 --- !u!65 &1724900018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17668,6 +17672,7 @@ MonoBehaviour:
   player: {fileID: 0}
   _inTrigger: 0
   _collectingZone: {fileID: 0}
+  _collectingZoneText: {fileID: 0}
 --- !u!65 &2007439609
 BoxCollider:
   m_ObjectHideFlags: 0
