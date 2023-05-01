@@ -86,6 +86,7 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1;
         winScreen.SetActive(true);
         Time.timeScale = 1;
+        GameManager.Instance.SetStatement(3);
         //Debug.Log("start cor");
         //_videoPlayer.Prepare();
         //WaitForSeconds waitTime = new WaitForSeconds(1);
