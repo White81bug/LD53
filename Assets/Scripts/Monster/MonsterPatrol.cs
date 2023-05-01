@@ -12,7 +12,7 @@ public sealed class MonsterPatrol : MonoBehaviour
 
     private int _destinationWaypoint;
 
-    private bool _isWaiting;
+    public bool _isWaiting;
 
     private NavMeshAgent _agent;
 

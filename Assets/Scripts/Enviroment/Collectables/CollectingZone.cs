@@ -1,9 +1,15 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 public sealed class CollectingZone : MonoBehaviour
 {
+    public static bool CanFlyOut;
+
+    [SerializeField] private TextMeshProUGUI _text;
+    [SerializeField] private PlayerQuestHolder _playerQuestHolder;
+
     private Dictionary<CollectableObject.CollectableType, int> _collectablesCounter;
 
     private List<Collider> _colliders;
@@ -11,22 +17,23 @@ public sealed class CollectingZone : MonoBehaviour
     private void Awake()
     {
         _collectablesCounter = new Dictionary<CollectableObject.CollectableType, int>();
-        _collectablesCounter.Add(CollectableObject.CollectableType.Scheme, 0);
-        _collectablesCounter.Add(CollectableObject.CollectableType.Food, 0);
+        _collectablesCounter.Add(CollectableObject.CollectableType.Any, 0);
+        //_collectablesCounter.Add(CollectableObject.CollectableType.Scheme, 0);
+        //_collectablesCounter.Add(CollectableObject.CollectableType.Food, 0);
 
         _colliders = new List<Collider>();
     }
 
     private void OnEnable()
     {
-        GameManager.Instance.PlayerCollect.OnDropObject.AddListener(CheckDrop);
-        GameManager.Instance.PlayerCollect.OnTakeObject.AddListener(CheckTake);
+        ScriptManager.Instance.PlayerCollect.OnDropObject.AddListener(CheckDrop);
+        ScriptManager.Instance.PlayerCollect.OnTakeObject.AddListener(CheckTake);
     }
 
     private void OnDisable()
     {
-        GameManager.Instance.PlayerCollect.OnDropObject.RemoveListener(CheckDrop);
-        GameManager.Instance.PlayerCollect.OnTakeObject.RemoveListener(CheckTake);
+        ScriptManager.Instance.PlayerCollect.OnDropObject.RemoveListener(CheckDrop);
+        ScriptManager.Instance.PlayerCollect.OnTakeObject.RemoveListener(CheckTake);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -74,7 +81,14 @@ public sealed class CollectingZone : MonoBehaviour
     {
         if (_colliders.Contains(gameObject.GetComponent<Collider>()))
         {
-            _collectablesCounter[gameObject.GetComponent<CollectableObject>().Type] += 1;
+            //_collectablesCounter[gameObject.GetComponent<CollectableObject>().Type] += 1;
+            gameObject.GetComponent<QuestTrigger>().AdvanceQuest();
+            _text.text = $"Collected {_playerQuestHolder.quest.Goal.currentAmount}/10\r\n(5 required to fly out)";
+            if (_playerQuestHolder.quest.Goal.currentAmount >= 5)
+            {
+                CanFlyOut = true;
+            }
+            gameObject.GetComponent<CollectableObject>().InZone = true;
         }
         //Debug.Log($"Food - {_collectablesCounter[CollectableObject.CollectableType.Food]}, Scheme -  {_collectablesCounter[CollectableObject.CollectableType.Scheme]}");
     }
