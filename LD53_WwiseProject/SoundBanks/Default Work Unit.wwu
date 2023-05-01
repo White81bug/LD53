@@ -8,8 +8,12 @@
 						<ObjectRef Name="MUS_Menu" ID="{0CAE5260-8B68-4022-9649-68F23A7B8EA4}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Click" ID="{D06F607A-313B-4117-9993-474567481929}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_NewGame" ID="{EED40404-E778-41A0-9299-0F7CC1985406}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pc_collect" ID="{5FE1D09B-3FC1-42A9-BB5E-978D9DA90624}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lose" ID="{273B41A9-453F-42B7-8BCE-D83838065F8D}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wind" ID="{1FD52E96-3DE9-448B-A188-8A166F56325B}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PC_footstep" ID="{798C97C9-721A-455A-BBD4-51D0881C070D}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Obj_collect" ID="{908ED879-AE02-4639-B4D7-F1E0800DD1F5}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EnemyZone" ID="{57192E36-F35F-476A-AAB4-16189EF5A6DF}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Hover" ID="{0EAAB9C6-1ACF-497A-8973-6806BAC33EEC}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Win" ID="{5B24F9E1-B308-4BAA-A92C-CF5B19A84CA0}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Location_01" ID="{C13BE6A5-A556-4EC5-A042-FC4D8610BAF9}" WorkUnitID="{E055D274-8044-4EB8-A411-8031516B9A26}" Origin="Manual" Filter="7"/>

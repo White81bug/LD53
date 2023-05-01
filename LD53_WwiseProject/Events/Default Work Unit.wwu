@@ -60,6 +60,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Obj_collect" ID="{908ED879-AE02-4639-B4D7-F1E0800DD1F5}">
+							<ChildrenList>
+								<Action Name="" ID="{0B1EF550-B15B-41D6-8584-0821BD3C5A13}" ShortID="896505577">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Object collect" ID="{3E871504-C861-4F3E-9F82-E61F5A5B2A42}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Win" ID="{5B24F9E1-B308-4BAA-A92C-CF5B19A84CA0}">
@@ -97,6 +108,71 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Dust" ID="{A3472087-45D2-4C86-BCB3-DFCAB056928A}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Player" ID="{D9EBA2F6-3FA6-4C67-854C-E4CC0CA2F7B6}" ShortID="243219369">
+					<ChildrenList>
+						<Event Name="PC_footstep" ID="{798C97C9-721A-455A-BBD4-51D0881C070D}">
+							<ChildrenList>
+								<Action Name="" ID="{9D18B5C1-D277-43CE-BAB0-614FE3693CA5}" ShortID="80996164">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="preFootstep" ID="{242FCDF9-A7E7-41B3-AF57-86A476DB4013}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9FA53179-5171-455B-AECF-15844A69DA94}" ShortID="697784220">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footstep" ID="{055352E4-4D93-4554-9886-006FC9B83D9C}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AECD47D0-D579-405A-9A0B-C979CC9FD32A}" ShortID="908309387">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bag" ID="{F883A0AB-968B-466E-A296-C2DFCBA8FBB4}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{23B2F7AE-2050-47AC-AB7D-F3936F59291D}" ShortID="701260415">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dust" ID="{EC2DB823-7275-4398-B8EE-18990F9630DE}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pc_collect" ID="{5FE1D09B-3FC1-42A9-BB5E-978D9DA90624}">
+							<ChildrenList>
+								<Action Name="" ID="{9B2939B3-0E5B-4ABF-A7F1-60B32958423C}" ShortID="571689073">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PC_collect" ID="{8A484A5A-9473-428F-8108-0621252D19F6}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="EnemyZone" ID="{57192E36-F35F-476A-AAB4-16189EF5A6DF}">
+					<ChildrenList>
+						<Action Name="" ID="{730AAEEE-8D29-4C62-972C-1CB45FEEE6DA}" ShortID="615874082">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyVoices" ID="{F54E95FF-E376-4216-A2CE-993E6239A2B1}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DEBBBA7E-56CE-417C-BB01-7D66A5B9B341}" ShortID="121595723">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Mus" ID="{7D300D3F-E5E4-4A20-ADDB-C03CECD41406}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
