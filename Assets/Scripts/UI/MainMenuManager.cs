@@ -12,6 +12,15 @@ public class MainMenuManager : MonoBehaviour
     creditsScreen.SetActive(false);
   }
 
+  public void NewGame(string sName)
+  {
+    GameManager.Instance.LoadScene(sName);
+  }
+
+  public void ExitGame()
+  {
+    GameManager.Instance.ExitGame();
+  }
   public void ShowCredits()
   {
     creditsScreen.SetActive(true);

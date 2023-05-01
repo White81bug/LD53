@@ -29,12 +29,15 @@ public sealed class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+    void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Game")
         {
            // Debug.Log("prokatilo");
             SetStatement(1);
+        }else if (scene.name == "MainMenu")
+        {
+           ResetGameState();
         }
     }
 
@@ -82,7 +85,11 @@ public sealed class GameManager : MonoBehaviour
         //Экран проигрыша
         UIManager.Instance.EnableLossScreen();
     }
-    
+
+    public void ResetGameState()
+    {
+        isStarted = false;
+    }
     public void LoadScene(string sceneName)
     {
         StartCoroutine(LoadSceneAsync(sceneName));
