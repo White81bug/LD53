@@ -35,6 +35,16 @@ public class QuestGiver : MonoBehaviour
         quest.isActive = true;
         player.quest = quest;
         questGiven = true;
+        UIManager.Instance.ShowDialogueLine(quest.description);
+    }
+
+    public void ForceQUest()
+    {
+        if(questGiven) return;
+        quest.isActive = true;
+        player.quest = quest;
+        questGiven = true;
+        UIManager.Instance.ShowDialogueLine(quest.description);
     }
  
     private void OnTriggerEnter(Collider other)

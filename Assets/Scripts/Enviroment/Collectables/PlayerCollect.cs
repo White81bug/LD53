@@ -9,6 +9,7 @@ using UnityEngine.Events;
 public sealed class PlayerCollect : MonoBehaviour
 {
     [SerializeField] private Transform _pointOfObject;
+    [SerializeField] private LinesHolder ItemLines;
 
     private List<GameObject> _collectableObjects; // List<> to prevent bug with several GameObjects collision.
     private GameObject _currentObject;
@@ -66,6 +67,11 @@ public sealed class PlayerCollect : MonoBehaviour
             if (!_currentObject.GetComponent<CollectableObject>().InZone)
             {
                 Debug.Log("took");
+                if(!_currentObject.GetComponent<CollectableObject>().saidLine)
+                {
+                    UIManager.Instance.ShowDialogueLine(ItemLines.lines[Random.Range(0,ItemLines.lines.Count+1)]);
+                    _currentObject.GetComponent<CollectableObject>().saidLine = true;
+                }
                 _currentObject.transform.position = _pointOfObject.transform.position;
                 _currentObject.transform.SetParent(_pointOfObject);
                 OnTakeObject?.Invoke(_currentObject);
