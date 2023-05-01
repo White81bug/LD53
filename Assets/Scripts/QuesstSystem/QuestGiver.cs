@@ -17,6 +17,7 @@ public class QuestGiver : MonoBehaviour
     private PlayerInput _input;
 
     [SerializeField] private GameObject _collectingZone;
+    [SerializeField] private GameObject _collectingZoneText;
 
     protected virtual void Awake()
     {
@@ -42,6 +43,7 @@ public class QuestGiver : MonoBehaviour
         if (quest.title == "GatherSupplies")
         {
             _collectingZone.SetActive(true);
+            _collectingZoneText.SetActive(true);
         }
     }
 
