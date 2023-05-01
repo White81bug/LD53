@@ -42,13 +42,7 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID AMBINCE = 263959058U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MUSICBUS = 2886307548U;
-        static const AkUniqueID PLAYER = 1069431850U;
-        static const AkUniqueID UIBUS = 1372881427U;
-        static const AkUniqueID WIND = 1537061107U;
-        static const AkUniqueID WINLOSEBUS = 864638068U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
