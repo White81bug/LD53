@@ -119,7 +119,8 @@ public sealed class GameManager : MonoBehaviour
         AkSoundEngine.PostEvent("Win", gameObject);
         Time.timeScale = 0;
         //Экран выигрыша
-        UIManager.Instance.EnableWinScreen();
+        //UIManager.Instance.EnableWinScreen();
+        LoadScene("MainMenu");
     }
     private void Lose()
     {
