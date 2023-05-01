@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CB1994EB-443D-8518-5824-6DE309C0A25F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A5136658-984D-5A31-FC75-8AC5FECE845A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,21 +19,26 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="263959058" Name="Ambince"/>
 				<Bus Id="864638068" Name="WinLoseBus"/>
+				<Bus Id="1069431850" Name="Player"/>
 				<Bus Id="1372881427" Name="UiBus"/>
 				<Bus Id="1537061107" Name="Wind"/>
 				<Bus Id="2886307548" Name="MusicBus"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
-			<AuxBusses>
-				<AuxBus Id="1640882099" Name="UIAux"/>
-				<AuxBus Id="3155190748" Name="MusicAux"/>
-			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="3660512661" Name="Oxygen"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5B30B313-ACBB-A39C-A83E-767295B88725}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B9E1F632-5EC5-75FC-2B6B-4168D3D0D6E5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="42087678" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footspep_02.wav</ShortName>
+					<CachePath>SFX/footspep_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="146646628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Click_NewGame.wav</ShortName>
 					<CachePath>SFX/UI_Click_NewGame_10C4C929.wem</CachePath>
@@ -48,19 +53,27 @@
 				</File>
 				<File Id="306575263" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159.wav</ShortName>
-					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159_19A0DAB3.wem</CachePath>
+					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159_678DDD86.wem</CachePath>
 				</File>
 				<File Id="327501103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>amb_location_01.wav</ShortName>
 					<CachePath>SFX/amb_location_01_62AE07D0.wem</CachePath>
 				</File>
+				<File Id="395438971" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bag2_01.wav</ShortName>
+					<CachePath>SFX/bag2_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="458163175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm 06 SND54161.wav</ShortName>
-					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 06 SND54161_A2DCEFBA.wem</CachePath>
+					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 06 SND54161_8AB8EF0E.wem</CachePath>
 				</File>
 				<File Id="477539199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mus_mainmenu_01.wav</ShortName>
 					<CachePath>SFX/mus_mainmenu_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="544681490" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footspep_03.wav</ShortName>
+					<CachePath>SFX/footspep_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="631581429" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Lose.wav</ShortName>
@@ -70,9 +83,21 @@
 					<ShortName>Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659.wav</ShortName>
 					<CachePath>SFX/Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659_10C4C929.wem</CachePath>
 				</File>
+				<File Id="668461636" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dirt_02.wav</ShortName>
+					<CachePath>SFX/dirt_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="670212554" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm 05 SND54162.wav</ShortName>
-					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 05 SND54162_075A3DB2.wem</CachePath>
+					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 05 SND54162_337AC078.wem</CachePath>
+				</File>
+				<File Id="677751872" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PC_collect.wav</ShortName>
+					<CachePath>SFX/PC_collect_10C4C929.wem</CachePath>
+				</File>
+				<File Id="695301052" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dust_01.wav</ShortName>
+					<CachePath>SFX/dust_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="710587988" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Click.wav</ShortName>
@@ -80,11 +105,15 @@
 				</File>
 				<File Id="733318528" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm 04 SND54163.wav</ShortName>
-					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 04 SND54163_22069087.wem</CachePath>
+					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 04 SND54163_288ADC92.wem</CachePath>
 				</File>
 				<File Id="748498315" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Interior, Howling, Tempest, Wind 02 SND54295.wav</ShortName>
-					<CachePath>SFX/Wind, Interior, Howling, Tempest, Wind 02 SND54295_9A2694AB.wem</CachePath>
+					<CachePath>SFX/Wind, Interior, Howling, Tempest, Wind 02 SND54295_1A18F747.wem</CachePath>
+				</File>
+				<File Id="758248416" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Object collect.wav</ShortName>
+					<CachePath>SFX/Object collect_10C4C929.wem</CachePath>
 				</File>
 				<File Id="858772338" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mus_mainmenu_02.wav</ShortName>
@@ -92,7 +121,7 @@
 				</File>
 				<File Id="863795930" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Interior, Howling, Tempest, Wind 01 SND54296.wav</ShortName>
-					<CachePath>SFX/Wind, Interior, Howling, Tempest, Wind 01 SND54296_B8605B86.wem</CachePath>
+					<CachePath>SFX/Wind, Interior, Howling, Tempest, Wind 01 SND54296_F533EAB1.wem</CachePath>
 				</File>
 				<File Id="890744551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dirt &amp; Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1.wav</ShortName>
@@ -100,17 +129,34 @@
 				</File>
 				<File Id="913623480" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm 03 SND54164.wav</ShortName>
-					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 03 SND54164_CA836875.wem</CachePath>
+					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 03 SND54164_61C18A08.wem</CachePath>
 				</File>
 				<File Id="918305144" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_hover.wav</ShortName>
 					<CachePath>SFX/UI_hover_10C4C929.wem</CachePath>
+				</File>
+				<File Id="920026161" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footspep_04.wav</ShortName>
+					<CachePath>SFX/footspep_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="933419192" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_01.wav</ShortName>
+					<CachePath>SFX/footstep_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1026049036" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bag1_01.wav</ShortName>
+					<CachePath>SFX/bag1_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1043909902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pre_footstep_01.wav</ShortName>
+					<CachePath>SFX/pre_footstep_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
 				<Custom>
 					<Plugin Id="443970491" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="919623103" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="976708773" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="990562241" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 			</Plugins>
@@ -130,33 +176,49 @@
 						<MediaRef Id="477539199"/>
 						<MediaRef Id="858772338"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="3155190748" Name="MusicAux"/>
-					</AuxBusRefs>
+				</Event>
+				<Event Id="2333350319" Name="Obj_collect" DurationType="OneShot" DurationMin="2.0955417" DurationMax="2.0955417">
+					<MediaRefs>
+						<MediaRef Id="758248416"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1814826345" Name="Pc_collect" DurationType="OneShot" DurationMin="2.9920833" DurationMax="2.9920833">
+					<MediaRefs>
+						<MediaRef Id="677751872"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="979341015" Name="PC_footstep" DurationType="OneShot" DurationMin="0.48192123" DurationMax="1.1892071">
+					<MediaRefs>
+						<MediaRef Id="42087678"/>
+						<MediaRef Id="395438971"/>
+						<MediaRef Id="544681490"/>
+						<MediaRef Id="668461636"/>
+						<MediaRef Id="695301052"/>
+						<MediaRef Id="920026161"/>
+						<MediaRef Id="933419192"/>
+						<MediaRef Id="1026049036"/>
+						<MediaRef Id="1043909902"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="976708773"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="2249769530" Name="UI_Click" DurationType="OneShot" DurationMin="0.16179167" DurationMax="0.16179167">
 					<MediaRefs>
 						<MediaRef Id="710587988"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1640882099" Name="UIAux"/>
-					</AuxBusRefs>
 				</Event>
 				<Event Id="2118900976" Name="UI_Hover" DurationType="OneShot" DurationMin="0.17758334" DurationMax="0.17758334">
 					<MediaRefs>
 						<MediaRef Id="918305144"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1640882099" Name="UIAux"/>
-					</AuxBusRefs>
 				</Event>
 				<Event Id="2240351934" Name="UI_NewGame" DurationType="OneShot" DurationMin="6.5116873" DurationMax="6.5116873">
 					<MediaRefs>
 						<MediaRef Id="146646628"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1640882099" Name="UIAux"/>
-					</AuxBusRefs>
 				</Event>
 				<Event Id="979765101" Name="Win" DurationType="Infinite">
 					<MediaRefs>
@@ -188,5 +250,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0D8F926D-2F1F-5FA6-D573-E6C90F13EA74}</FileHash>
+	<FileHash>{92324C7D-F000-A0A4-9E33-5B5D11654149}</FileHash>
 </SoundBanksInfo>
