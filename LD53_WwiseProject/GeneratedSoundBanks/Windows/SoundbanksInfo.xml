@@ -27,7 +27,7 @@
 				<GameParameter Id="3660512661" Name="Oxygen"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{52A27E4F-F4D4-08AC-047F-78E69F3FCC20}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D17236D4-D0CE-2CB7-0BA8-E16EEE308627}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -291,5 +291,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6724E3C6-1192-3BA0-599B-61796D8F2A0E}</FileHash>
+	<FileHash>{016B4C74-663F-E081-19D3-C19119B57026}</FileHash>
 </SoundBanksInfo>

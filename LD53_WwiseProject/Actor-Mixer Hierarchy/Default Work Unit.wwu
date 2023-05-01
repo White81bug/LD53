@@ -406,7 +406,7 @@
 															</Point>
 															<Point>
 																<XPos>13.54369</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
@@ -1670,6 +1670,7 @@
 						<ActorMixer Name="EnemyActor" ID="{2A44B9FD-8D33-41D6-BDCA-8C13372D1F64}" ShortID="1032837924">
 							<PropertyList>
 								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
