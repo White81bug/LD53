@@ -38,9 +38,11 @@ public class Oxygen : MonoBehaviour
 
     private IEnumerator Breathing()
     {
+
         while (_isBreathes)
         {
             _oxygenData.CurrentOxygenAmount -= Time.deltaTime * _breathDecreaseMultiplier * Time.timeScale;
+       
 
             UIManager.Instance.SetSliderValue(_oxygenData.CurrentOxygenAmount);
             if (_oxygenData.CurrentOxygenAmount <= 0)

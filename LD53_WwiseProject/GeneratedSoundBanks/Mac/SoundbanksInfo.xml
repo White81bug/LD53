@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FDC76C10-BB21-F4A0-6FD8-1D99657FAB23}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AB817230-F9F0-2151-6FAD-3FCABE7FD176}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -27,7 +27,7 @@
 				<GameParameter Id="3660512661" Name="Oxygen"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CD1C75C1-A6D1-EEC7-185A-6BA3DA09AF56}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D1E3994B-C0D0-34C0-51A7-82F95D50B89D}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -284,7 +284,12 @@
 					</PluginRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="625099702" Name="PauseMenuVolume"/>
+				<GameParameter Id="2409417334" Name="PauseMenuFilter"/>
+				<GameParameter Id="3660512661" Name="Oxygen"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7A6721DE-8FF1-67B5-7D8C-AD8105A964AF}</FileHash>
+	<FileHash>{8C9CD9FF-CBAD-B941-7EBB-184490D871CB}</FileHash>
 </SoundBanksInfo>
