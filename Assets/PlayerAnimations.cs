@@ -27,7 +27,7 @@ public class PlayerAnimations : MonoBehaviour
 
     public void PickingUpAnimation(GameObject _)
     {
-        ScriptManager.Instance.InputManager.CanMove = false;
+        ScriptManager.Instance.MovementControllerRedone.CanMove = false;
         _animator.SetBool("IsPickuping", true);
         StartCoroutine(PickingUp());
     }
@@ -37,6 +37,6 @@ public class PlayerAnimations : MonoBehaviour
         yield return new WaitForSeconds(3.33f); // CONST
         Debug.Log("end of wait");
         _animator.SetBool("IsPickuping", false);
-        ScriptManager.Instance.InputManager.CanMove = true;
+        ScriptManager.Instance.MovementControllerRedone.CanMove = true;
     }
 }

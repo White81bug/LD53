@@ -14,7 +14,7 @@ public sealed class MonsterChasing : MonoBehaviour
     private NavMeshAgent _agent;
 
     private GameObject _player;
-    private bool _isChasing;
+    public bool _isChasing;
 
     private SphereCollider _sphereCollider;
 
@@ -45,7 +45,7 @@ public sealed class MonsterChasing : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<MovementController>())
+        if (other.GetComponent<MovementControllerRedone>())
         {
             _player = other.gameObject;
             _isChasing = true;
@@ -55,7 +55,7 @@ public sealed class MonsterChasing : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<MovementController>())
+        if (other.GetComponent<MovementControllerRedone>())
         {
             _player = null;
             _isChasing = false;

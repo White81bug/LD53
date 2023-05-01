@@ -10,6 +10,7 @@ public class MovementControllerRedone : MonoBehaviour
     public bool CanMove;
 
     [SerializeField] private float speed;
+    private float _startMovementSpeed;
     [SerializeField] private float turnSmoothTime = 0.1f;
     private float _turnSmoothVelocity;
     private Transform _camera;
@@ -34,6 +35,24 @@ public class MovementControllerRedone : MonoBehaviour
         
         _playerAnimations = GetComponent<PlayerAnimations>();
     }
+
+    private void Start()
+    {
+        _startMovementSpeed = speed;
+    }
+
+    private void OnEnable()
+    {
+        ScriptManager.Instance.PlayerCollect.OnTakeObject.AddListener(Slowdown);
+        ScriptManager.Instance.PlayerCollect.OnDropObject.AddListener(RestoreSpeed);
+    }
+
+    private void OnDisable()
+    {
+        ScriptManager.Instance.PlayerCollect.OnTakeObject.RemoveListener(Slowdown);
+        ScriptManager.Instance.PlayerCollect.OnDropObject.RemoveListener(RestoreSpeed);
+    }
+
 
     private void FixedUpdate()
     {
@@ -71,5 +90,19 @@ public class MovementControllerRedone : MonoBehaviour
         _cameraController.moveToTarget();
 
         #endregion
+    }
+    private void Slowdown(GameObject gameObject)
+    {
+        Slowdown(gameObject.GetComponent<CollectableObject>().Slowdown);
+    }
+
+    private void Slowdown(float value)
+    {
+        speed -= value;
+    }
+
+    private void RestoreSpeed(GameObject _) // Here argument in unnecessary, but required.
+    {
+        speed = _startMovementSpeed;
     }
 }

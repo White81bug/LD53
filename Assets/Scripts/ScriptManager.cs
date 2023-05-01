@@ -8,7 +8,8 @@ public class ScriptManager : MonoBehaviour
     [Header("Scripts")]
     public TransformParentManager TransformParentManager;
     public PlayerCollect PlayerCollect;
-    public InputManager InputManager;
+    //public InputManager InputManager;
+    public MovementControllerRedone MovementControllerRedone;
     private void Awake()
     {
         if (Instance == null) Instance = this;
