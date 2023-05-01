@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{07DB80F1-E685-F93E-941E-7211BECA30F5}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{73FDDFE0-F1DF-DCCC-7FEC-188D9A50C341}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,12 +19,6 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="263959058" Name="Ambince"/>
-				<Bus Id="864638068" Name="WinLoseBus"/>
-				<Bus Id="1069431850" Name="Player"/>
-				<Bus Id="1372881427" Name="UiBus"/>
-				<Bus Id="1537061107" Name="Wind"/>
-				<Bus Id="2886307548" Name="MusicBus"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
@@ -33,7 +27,7 @@
 				<GameParameter Id="3660512661" Name="Oxygen"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{83242B71-14DF-FB34-5117-E629616C005B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EACCADA4-F540-571C-C3E8-2E047D581DC8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -80,7 +74,7 @@
 				</File>
 				<File Id="477539199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mus_mainmenu_01.wav</ShortName>
-					<CachePath>SFX/mus_mainmenu_01_23350B12.wem</CachePath>
+					<CachePath>SFX/mus_mainmenu_01_97706A28.wem</CachePath>
 				</File>
 				<File Id="544681490" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footspep_03.wav</ShortName>
@@ -100,7 +94,7 @@
 				</File>
 				<File Id="670212554" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Gust, Designed, Polar, Snow Storm 05 SND54162.wav</ShortName>
-					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 05 SND54162_20BF437F.wem</CachePath>
+					<CachePath>SFX/Wind, Gust, Designed, Polar, Snow Storm 05 SND54162_EAF2C5D3.wem</CachePath>
 				</File>
 				<File Id="677751872" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PC_collect.wav</ShortName>
@@ -292,5 +286,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BA7EF8D6-FC4C-7B33-041C-36A1F6D5A0F3}</FileHash>
+	<FileHash>{116A6E8A-5B65-5DD1-1273-B497F6E94E60}</FileHash>
 </SoundBanksInfo>

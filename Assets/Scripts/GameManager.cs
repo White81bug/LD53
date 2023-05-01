@@ -31,6 +31,8 @@ public sealed class GameManager : MonoBehaviour
 
     void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
     {
+        AkSoundEngine.StopAll();
+
         if (scene.name == "Game")
         {
            // Debug.Log("prokatilo");
@@ -68,19 +70,23 @@ public sealed class GameManager : MonoBehaviour
         UIManager.Instance.DisablePauseScreen();
     }
     private void Pause()
-    {
+    {   
         Time.timeScale = 0;
         //включаем экран паузы.
         if(isStarted)UIManager.Instance.EnablePauseScreen();
     }
     private void Win()
     {
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Win", gameObject);
         Time.timeScale = 0;
         //Экран выигрыша
         UIManager.Instance.EnableWinScreen();
     }
     private void Lose()
     {
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Lose", gameObject);
         Time.timeScale = 0;
         //Экран проигрыша
         UIManager.Instance.EnableLossScreen();

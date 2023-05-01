@@ -33,13 +33,18 @@ public class MainMenuManager : MonoBehaviour
 
   public void PlayNewGameSound()
   {
-    
+        AkSoundEngine.PostEvent("UI_NewGame", gameObject);
   }
 
   public void PlayClickSound()
   {
-    
+        AkSoundEngine.PostEvent("UI_Click", gameObject);
   }
+
+    public void HoverSound()
+    {
+        AkSoundEngine.PostEvent("UI_Hover", gameObject);
+    }
   #endregion
 }
 

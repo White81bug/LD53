@@ -32,7 +32,7 @@
 								<Action Name="" ID="{B57E0FA4-F36D-4046-BD97-EE6E6491EDCA}" ShortID="505392834">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="UI_Click" ID="{E6CACFB9-ADAB-47E9-9DCD-158A2006A174}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+											<ObjectRef Name="UI_Click_botton" ID="{E6CACFB9-ADAB-47E9-9DCD-158A2006A174}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -43,7 +43,7 @@
 								<Action Name="" ID="{2E0AC79E-3CB1-4BA6-992D-5EA798B530CB}" ShortID="857901478">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="UI_hover" ID="{0BBA587D-2FD7-4BF4-A319-730553E7DE5D}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+											<ObjectRef Name="UI_hover_Sound" ID="{0BBA587D-2FD7-4BF4-A319-730553E7DE5D}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -78,7 +78,7 @@
 						<Action Name="" ID="{5F7740B2-F534-4994-8AB5-28A46970E6C1}" ShortID="200884164">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Win" ID="{8CEA816B-3C61-4C0A-8A13-66359D8FC64F}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+									<ObjectRef Name="WinSequince" ID="{8CEA816B-3C61-4C0A-8A13-66359D8FC64F}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -89,7 +89,7 @@
 						<Action Name="" ID="{0A773170-E03C-459B-8335-CEE7EC36AB6B}" ShortID="363050597">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Lose" ID="{B645B827-C0CF-42EB-9B05-C9C81D43DDC3}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+									<ObjectRef Name="end_Lose" ID="{B645B827-C0CF-42EB-9B05-C9C81D43DDC3}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

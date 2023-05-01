@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bc83ad18bc482c4e81af402c8737b396
     GuidInternal: 
-    m_lastTime: -8585188530475934657
+    m_lastTime: -8585189812306148471
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,25 +38,8 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4952dba519f15446b876eabf68b8eb2c
     GuidInternal: 
-    m_lastTime: -8585186515405088513
+    m_lastTime: -8585186383885295261
     List:
-    - name: Ambince
-      guid: 07cb0f3348ffa8469c9d24c11f58ebf2
-      id: 263959058
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4952dba519f15446b876eabf68b8eb2c
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Ambince
-        ObjectType: 2
-        guid: 07cb0f3348ffa8469c9d24c11f58ebf2
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambince
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -71,91 +54,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-    - name: MusicBus
-      guid: f1450f6529cd6042b6c8f23e23d0db40
-      id: 2886307548
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4952dba519f15446b876eabf68b8eb2c
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: MusicBus
-        ObjectType: 2
-        guid: f1450f6529cd6042b6c8f23e23d0db40
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicBus
-    - name: Player
-      guid: bde3ca901db7404a87713a00ab26eded
-      id: 1069431850
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4952dba519f15446b876eabf68b8eb2c
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Player
-        ObjectType: 2
-        guid: bde3ca901db7404a87713a00ab26eded
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player
-    - name: UiBus
-      guid: af33eeac29fbe944a58d03a2cd87ae00
-      id: 1372881427
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4952dba519f15446b876eabf68b8eb2c
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: UiBus
-        ObjectType: 2
-        guid: af33eeac29fbe944a58d03a2cd87ae00
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UiBus
-    - name: Wind
-      guid: 02e373966456454d8dfe3e0b043f150e
-      id: 1537061107
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4952dba519f15446b876eabf68b8eb2c
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Wind
-        ObjectType: 2
-        guid: 02e373966456454d8dfe3e0b043f150e
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Wind
-    - name: WinLoseBus
-      guid: 18d69bda3e7eed4591480db1b0c709da
-      id: 864638068
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4952dba519f15446b876eabf68b8eb2c
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: WinLoseBus
-        ObjectType: 2
-        guid: 18d69bda3e7eed4591480db1b0c709da
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\WinLoseBus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -168,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 92aee432e1a3c0449357e2cac0e66ba1
     GuidInternal: 
-    m_lastTime: -8585186515398690153
+    m_lastTime: -8585186425004071717
     List:
     - name: Main
       guid: eeb8e4b88326bd49be3254cc2b481da1
@@ -196,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 74d255e04480b84ea4118031516b9a26
     GuidInternal: 
-    m_lastTime: -8585186515406077970
+    m_lastTime: -8585186370582551031
     List:
     - name: AMB_Location_01
       guid: a5e63bc156a5c54ea042fc4d8610baf9
@@ -283,6 +181,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 79d88e9002ae3946b4d7f1e0800dd1f5
       Path: Events\Default Work Unit\UI\Obj_collect
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Oxygen
+      guid: 432e75774573c24f959f31bcb1f4b9ea
+      id: 3660512661
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 74d255e04480b84ea4118031516b9a26
+      - ElementName: Player
+        ObjectType: 4
+        guid: f6a2ebd9a63f674c854ce4cc0ca2f7b6
+      - ElementName: Oxygen
+        ObjectType: 3
+        guid: 432e75774573c24f959f31bcb1f4b9ea
+      Path: Events\Default Work Unit\Player\Oxygen
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -466,7 +384,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 916bf3713404ee4190fe42b57a2689d2
     GuidInternal: 
-    m_lastTime: -8585186515406077970
+    m_lastTime: -8585186553628389906
     List:
     - name: Oxygen
       guid: 833c3fd046873e44aba131708367c71a
@@ -522,7 +440,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 80eddc88d72615488827730ddcc53a58
     GuidInternal: 
-    m_lastTime: -8585188530475949682
+    m_lastTime: -8585189812305669436
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -536,7 +454,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 464af60ede2f3749960f8e2c3bd04762
     GuidInternal: 
-    m_lastTime: -8585188530475939717
+    m_lastTime: -8585189812306412370
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -550,11 +468,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bb81eb0387a2004ca2b83aac3407f525
     GuidInternal: 
-    m_lastTime: -8585188530475939717
+    m_lastTime: -8585189812306238493
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 0200000003000000130000001700000018000000
+  ExpandedWaapiItemIds: 0600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
