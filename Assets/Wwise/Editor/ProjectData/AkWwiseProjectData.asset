@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 92aee432e1a3c0449357e2cac0e66ba1
     GuidInternal: 
-    m_lastTime: -8585186515398690153
+    m_lastTime: -8585186263781475729
     List:
     - name: Main
       guid: eeb8e4b88326bd49be3254cc2b481da1
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 74d255e04480b84ea4118031516b9a26
     GuidInternal: 
-    m_lastTime: -8585186308653418645
+    m_lastTime: -8585186263790803093
     List:
     - name: AMB_Location_01
       guid: a5e63bc156a5c54ea042fc4d8610baf9
@@ -224,7 +224,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PC_footstep
+    - name: pc_footstep
       guid: c9978c791a725a45bbd451d0881c070d
       id: 979341015
       PathAndIcons:
@@ -237,10 +237,10 @@ MonoBehaviour:
       - ElementName: Player
         ObjectType: 4
         guid: f6a2ebd9a63f674c854ce4cc0ca2f7b6
-      - ElementName: PC_footstep
+      - ElementName: pc_footstep
         ObjectType: 3
         guid: c9978c791a725a45bbd451d0881c070d
-      Path: Events\Default Work Unit\Player\PC_footstep
+      Path: Events\Default Work Unit\Player\pc_footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
