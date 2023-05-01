@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535ff11077db04749889c29b20efc41f, type: 3}
   m_Name: QuestLines
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - 'Is it a broken helmet out there? Another casualty on this cursed planet, huh? '
+  - 'I need to go to the rocket. Now or this planet takes my life as well. '
+  - I must go now, or this planet will be my death too. But the journey to Earth
+    is long. I need to collect equipment.
+  - I have some time left. I can collect more items. What if I need them in the rocket?

@@ -12,4 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535ff11077db04749889c29b20efc41f, type: 3}
   m_Name: PickUpLines
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - I have always dreamt about Mars. The red dot in the vast skies promised a better
+    future for humankind and myself. When the opportunity arose, I jumped at the
+    chance. Leaving all my life behind - old friends, ex-lovers. An adult daughter.
+    The call of wanderlust was too strong to resist.
+  - 'Life on Mars is not a goddamn sci-fi show. There are no pretty domes in the
+    red valleys and no happy people building a better future for the next generations.
+    Here is your first disappointment: you must live six feet under the ground as
+    if it were your grave. You don''t see the sun, you don''t see the stars. You
+    are buried alive in this twisted idea of a space dream. '
+  - 'My daughter''s name is Agatha. She is Earthbound. The mere thought of leaving
+    our home planet is repulsive to her. I have been waiting to hear from her for
+    nearly a decade. Does she have a family of her own? What does she do? Where does
+    she live? What person did she grow up to? I wish I could see her one more time. '
+  - 'Rangers tell stories. About pyramids of the Ophir Chasma and shrieks of the
+    Noctis Labyrinth. About the giant bones found in the Eberswalde Crater. About
+    the Mars Mission Zero sent by the USSR back in the seventies. But Mars is stillborn,
+    isn''t it? Dry and dead, never having a chance to prosper.  '
+  - People disappear on the Red Planet. Three went to the Noctis Labyrinth, and no
+    one returned. We haven't found bodies. Only one broken helmet is half-buried
+    in the red sand. And so many died in accidents. Food poisoning, suffocation,
+    broken bones, and untreated diseases. Mars is reaping its bloody harvest while
+    people sacrifice themselves in the name of empty ideals.
+  - 'I am filled with ambition. Though wealth cannot be gained on Mars, the chance
+    to etch one''s name in the everlasting hall of fame awaits. From the first human
+    in space, Yuri Gagarin, to the present day, many pioneers have left Earth and
+    made their mark. I yearned to join their ranks and be remembered as a conqueror
+    of Mars. To have my name enshrined in the pages of student books, to become a
+    symbol on which humanity can build its future in space.   '
+  - '"Johansson, do you copy? Listen, I hate being this person, but someone has to
+    tell you. Agatha, your daughter, died. I am sorry." '
+  - Mars will never be the second Earth. It was all a lie, wishful thinking. It was
+    too late when we realized it. That red dust will never become fertile soil. The
+    air will never become breathable. Mars will never be terraformed. All these people
+    died for nothing. I wasted my life on nothing.
+  - '"The colonization of Mars is aborted. All remaining explorers will be returned
+    to Earth. Refrain from taking equipment. Leave it be." '
+  - I hate Mars.
