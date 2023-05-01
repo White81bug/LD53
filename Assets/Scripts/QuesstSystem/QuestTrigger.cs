@@ -41,7 +41,11 @@ public class QuestTrigger : MonoBehaviour
 
     private void AdvanceQuest(InputAction.CallbackContext ctx)
     {
-       
+        if (triggerKey == "Rocket" & CollectingZone.CanFlyOut)
+        {
+            GameManager.Instance.SetStatement(2);
+        }
+
         if (_interacted) return;
         if(!_inTrigger) return;
         if(player.quest == null) return;

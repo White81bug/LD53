@@ -69,7 +69,7 @@ public sealed class PlayerCollect : MonoBehaviour
                 Debug.Log("took");
                 if(!_currentObject.GetComponent<CollectableObject>().saidLine)
                 {
-                    UIManager.Instance.ShowDialogueLine(ItemLines.lines[Random.Range(0,ItemLines.lines.Count+1)]);
+                    UIManager.Instance.ShowDialogueLine(ItemLines.lines[Random.Range(0,ItemLines.lines.Count)]);
                     _currentObject.GetComponent<CollectableObject>().saidLine = true;
                 }
                 _currentObject.transform.position = _pointOfObject.transform.position;

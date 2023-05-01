@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public sealed class CollectingZone : MonoBehaviour
 {
+    public static bool CanFlyOut;
+
     [SerializeField] private TextMeshProUGUI _text;
     [SerializeField] private PlayerQuestHolder _playerQuestHolder;
 
@@ -82,6 +84,10 @@ public sealed class CollectingZone : MonoBehaviour
             //_collectablesCounter[gameObject.GetComponent<CollectableObject>().Type] += 1;
             gameObject.GetComponent<QuestTrigger>().AdvanceQuest();
             _text.text = $"Collected {_playerQuestHolder.quest.Goal.currentAmount}/10\r\n(5 required to fly out)";
+            if (_playerQuestHolder.quest.Goal.currentAmount >= 5)
+            {
+                CanFlyOut = true;
+            }
             gameObject.GetComponent<CollectableObject>().InZone = true;
         }
         //Debug.Log($"Food - {_collectablesCounter[CollectableObject.CollectableType.Food]}, Scheme -  {_collectablesCounter[CollectableObject.CollectableType.Scheme]}");
