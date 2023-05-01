@@ -3907,6 +3907,7 @@ MonoBehaviour:
       currentAmount: 0
   player: {fileID: 0}
   _inTrigger: 0
+  _collectingZone: {fileID: 1724900015}
 --- !u!114 &508972177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6345,6 +6346,7 @@ MonoBehaviour:
       currentAmount: 0
   player: {fileID: 0}
   _inTrigger: 0
+  _collectingZone: {fileID: 0}
 --- !u!65 &768906681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15006,7 +15008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1724900016
 Transform:
   m_ObjectHideFlags: 0
@@ -17427,6 +17429,7 @@ MonoBehaviour:
       currentAmount: 0
   player: {fileID: 0}
   _inTrigger: 0
+  _collectingZone: {fileID: 0}
 --- !u!65 &2007439609
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class QuestGiver : MonoBehaviour
     private InputActions interactActions;
     private PlayerInput _input;
 
+    [SerializeField] private GameObject _collectingZone;
+
     protected virtual void Awake()
     {
         _collider = GetComponent<BoxCollider>();
@@ -36,6 +38,11 @@ public class QuestGiver : MonoBehaviour
         player.quest = quest;
         questGiven = true;
         UIManager.Instance.ShowDialogueLine(quest.description);
+
+        if (quest.title == "GatherSupplies")
+        {
+            _collectingZone.SetActive(true);
+        }
     }
 
     public void ForceQUest()
