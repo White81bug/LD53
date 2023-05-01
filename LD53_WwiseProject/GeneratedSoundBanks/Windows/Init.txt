@@ -1,13 +1,5 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	864638068	WinLoseBus			\Default Work Unit\Master Audio Bus\WinLoseBus	
-	1372881427	UiBus			\Default Work Unit\Master Audio Bus\UiBus	
-	1537061107	Wind			\Default Work Unit\Master Audio Bus\Wind	
-	2886307548	MusicBus			\Default Work Unit\Master Audio Bus\MusicBus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-
-Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1640882099	UIAux			\Default Work Unit\Master Audio Bus\UIAux	
-	3155190748	MusicAux			\Default Work Unit\Master Audio Bus\MusicAux	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

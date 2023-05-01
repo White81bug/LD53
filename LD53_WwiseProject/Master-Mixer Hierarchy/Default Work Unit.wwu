@@ -9,30 +9,6 @@
 							<ObjectRef Name="System" ID="{E744AE4D-9493-4850-B5B0-D9C299C18DF9}" WorkUnitID="{30F4A6E7-7433-4CCE-B3CE-FAE8003BF250}"/>
 						</Reference>
 					</ReferenceList>
-					<ChildrenList>
-						<AuxBus Name="MusicAux" ID="{0D3EC688-05C4-4831-9AA7-3DDD3CF49CF7}"/>
-						<AuxBus Name="UIAux" ID="{DEDFF8D1-FC51-407C-9D85-073C8A7B680F}"/>
-						<Bus Name="MusicBus" ID="{650F45F1-CD29-4260-B6C8-F23E23D0DB40}">
-							<PropertyList>
-								<Property Name="MaxDuckVolume" Type="Real64" Value="-17"/>
-								<Property Name="RecoveryTime" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="UiBus" ID="{ACEE33AF-FB29-44E9-A58D-03A2CD87AE00}"/>
-									<DuckingParam>
-										<Volume>-6</Volume>
-										<FadeInTime>1</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
-						</Bus>
-						<Bus Name="UiBus" ID="{ACEE33AF-FB29-44E9-A58D-03A2CD87AE00}"/>
-						<Bus Name="WinLoseBus" ID="{DA9BD618-7E3E-45ED-9148-0DB1B0C709DA}"/>
-						<Bus Name="Wind" ID="{9673E302-5664-4D45-8DFE-3E0B043F150E}"/>
-					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 096b2dce9f109da4d9722725fd624509, type: 3}
   m_Name: OxygenData
   m_EditorClassIdentifier: 
-  MaxOxygenAmount: 100
-  CurrentOxygenAmount: -0.065356076
+  MaxOxygenAmount: 45
+  CurrentOxygenAmount: 29.698454

@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{71F36B91-0434-41EE-90FE-42B57A2689D2}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{71F36B91-0434-41EE-90FE-42B57A2689D2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{71F36B91-0434-41EE-90FE-42B57A2689D2}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Oxygen" ID="{D03F3C83-8746-443E-ABA1-31708367C71A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="45"/>
+						<Property Name="Max" Type="Real64" Value="45"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PauseMenuFilter" ID="{3DD8749A-B8E3-497B-853A-88833D0BF38B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PauseMenuVolume" ID="{33D07293-C2EA-4770-9F28-2EA6308BB91C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

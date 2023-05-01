@@ -1,22 +1,21 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public sealed class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    
-    [Header("Scripts")]
-    public TransformParentManager TransformParentManager;
-    public PlayerCollect PlayerCollect;
-    public InputManager InputManager;
-    
-    private State _curState = State.Play;
+
+    private bool isStarted;
+    private State _curState = State.Pause;
+    private InputActions _inputActions;
+
     public enum State
     {
         Pause,
-        Win,
         Play,
+        Win,
         Lose
     }
     public enum Scene
@@ -29,11 +28,32 @@ public sealed class GameManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(this);
+
+        isStarted = false;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+        _inputActions = new InputActions();
+        _inputActions.Enable();
+        _inputActions.Player.Pause.performed += Pause;
     }
 
-    public void SetStatement(State state)
+    void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
     {
-        _curState = state;
+        AkSoundEngine.StopAll();
+
+        if (scene.name == "Game")
+        {
+           // Debug.Log("prokatilo");
+            SetStatement(1);
+        }else if (scene.name == "MainMenu")
+        {
+           ResetGameState();
+        }
+    }
+
+    public void SetStatement(int value)
+    {
+        _curState = (State)value;
         switch (_curState)
         {
             case State.Play: Play(); break;
@@ -45,24 +65,85 @@ public sealed class GameManager : MonoBehaviour
 
     private void Play()
     {
-        
+        //выключить экран паузы
+        if (!isStarted)
+        {
+            UIManager.Instance.EnableSlider();
+            Oxygen.Instance.StartBreathing();
+            Time.timeScale = 1;
+            isStarted = true;
+        }
+        else{Time.timeScale = 1;}
+        UIManager.Instance.DisablePauseScreen();
+    }
+
+    private void Pause(InputAction.CallbackContext ctx)
+    {
+        if (_curState != State.Pause)
+        {
+            AkSoundEngine.SetRTPCValue("PauseMenuVolume", 80, GameObject.Find("MusBack"));
+            AkSoundEngine.SetRTPCValue("PauseMenuFilter", 100, GameObject.Find("MusBack"));
+
+
+            _curState = State.Pause;
+            Time.timeScale = 0;
+            if (isStarted) UIManager.Instance.EnablePauseScreen();
+        }
+        else
+        {
+            Time.timeScale = 1;
+            if (isStarted) UIManager.Instance.DisablePauseScreen();
+        }
+
+        //включаем экран паузы.
     }
     private void Pause()
     {
-        
+        if (_curState != State.Pause)
+        {
+            Time.timeScale = 0;
+            if (isStarted) UIManager.Instance.EnablePauseScreen();
+        }
+        else
+        {
+            Time.timeScale = 1;
+            if (isStarted) UIManager.Instance.DisablePauseScreen();
+        }
+        //////Time.timeScale = 0;
+        ////////включаем экран паузы.
+        //////if(isStarted)UIManager.Instance.EnablePauseScreen();
     }
     private void Win()
     {
-        
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Win", gameObject);
+        Time.timeScale = 0;
+        //Экран выигрыша
+        UIManager.Instance.EnableWinScreen();
     }
     private void Lose()
     {
-        
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Lose", gameObject);
+        Time.timeScale = 0;
+        //Экран проигрыша
+        UIManager.Instance.EnableLossScreen();
     }
 
-    public IEnumerator LoadSceneAsync(Scene scene)
+    public void ResetGameState()
     {
-        var async = SceneManager.LoadSceneAsync(scene.ToString());
+        isStarted = false;
+    }
+    public void LoadScene(string sceneName)
+    {
+        StartCoroutine(LoadSceneAsync(sceneName));
+    }
+
+    
+
+    private IEnumerator LoadSceneAsync(string sceneName)
+    {
+        var async = SceneManager.LoadSceneAsync(sceneName);
         async.allowSceneActivation = false;
 
         while (async.progress < 0.9f)
@@ -71,5 +152,9 @@ public sealed class GameManager : MonoBehaviour
         async.allowSceneActivation = true;
 
     }
-    
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }
