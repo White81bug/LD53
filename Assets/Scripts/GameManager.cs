@@ -1,12 +1,16 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public sealed class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
     private bool isStarted;
     private State _curState = State.Pause;
+    private InputActions _inputActions;
+
     public enum State
     {
         Pause,
@@ -27,10 +31,16 @@ public sealed class GameManager : MonoBehaviour
 
         isStarted = false;
         SceneManager.sceneLoaded += OnSceneLoaded;
+
+        _inputActions = new InputActions();
+        _inputActions.Enable();
+        _inputActions.Player.Pause.performed += Pause;
     }
 
     void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
     {
+        AkSoundEngine.StopAll();
+
         if (scene.name == "Game")
         {
            // Debug.Log("prokatilo");
@@ -43,7 +53,6 @@ public sealed class GameManager : MonoBehaviour
 
     public void SetStatement(int value)
     {
-        Debug.Log($"set {value}");
         _curState = (State)value;
         switch (_curState)
         {
@@ -67,20 +76,51 @@ public sealed class GameManager : MonoBehaviour
         else{Time.timeScale = 1;}
         UIManager.Instance.DisablePauseScreen();
     }
+
+    private void Pause(InputAction.CallbackContext ctx)
+    {
+        if (_curState != State.Pause)
+        {
+            _curState = State.Pause;
+            Time.timeScale = 0;
+            if (isStarted) UIManager.Instance.EnablePauseScreen();
+        }
+        else
+        {
+            Time.timeScale = 1;
+            if (isStarted) UIManager.Instance.DisablePauseScreen();
+        }
+
+        //включаем экран паузы.
+    }
     private void Pause()
     {
-        Time.timeScale = 0;
-        //включаем экран паузы.
-        if(isStarted)UIManager.Instance.EnablePauseScreen();
+        if (_curState != State.Pause)
+        {
+            Time.timeScale = 0;
+            if (isStarted) UIManager.Instance.EnablePauseScreen();
+        }
+        else
+        {
+            Time.timeScale = 1;
+            if (isStarted) UIManager.Instance.DisablePauseScreen();
+        }
+        //////Time.timeScale = 0;
+        ////////включаем экран паузы.
+        //////if(isStarted)UIManager.Instance.EnablePauseScreen();
     }
     private void Win()
     {
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Win", gameObject);
         Time.timeScale = 0;
         //Экран выигрыша
         UIManager.Instance.EnableWinScreen();
     }
     private void Lose()
     {
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Lose", gameObject);
         Time.timeScale = 0;
         //Экран проигрыша
         UIManager.Instance.EnableLossScreen();
