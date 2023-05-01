@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
     
     public Vector3 previousPosition;
     
-    private const float MaxDistance = 15;
+    private const float MaxDistance = 25;
     private const float MinDistance = 10;
     [Range(MinDistance,MaxDistance)] [SerializeField] private float distanceToTarget = 10;
 
