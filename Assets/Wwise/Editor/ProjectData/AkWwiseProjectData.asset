@@ -24,9 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bc83ad18bc482c4e81af402c8737b396
     GuidInternal: 
-
     m_lastTime: -8585187694813814080
-
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -40,9 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4952dba519f15446b876eabf68b8eb2c
     GuidInternal: 
-
-    m_lastTime: -8585187694819273477
-
+    m_lastTime: -8585186716231145626
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -58,7 +54,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-
     - name: MusicAux
       guid: 88c63e0dc40531489aa73ddd3cf49cf7
       id: 3155190748
@@ -127,7 +122,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: af33eeac29fbe944a58d03a2cd87ae00
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UiBus
-
+    - name: Wind
+      guid: 02e373966456454d8dfe3e0b043f150e
+      id: 1537061107
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4952dba519f15446b876eabf68b8eb2c
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Wind
+        ObjectType: 2
+        guid: 02e373966456454d8dfe3e0b043f150e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Wind
+    - name: WinLoseBus
+      guid: 18d69bda3e7eed4591480db1b0c709da
+      id: 864638068
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4952dba519f15446b876eabf68b8eb2c
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: WinLoseBus
+        ObjectType: 2
+        guid: 18d69bda3e7eed4591480db1b0c709da
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\WinLoseBus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -140,9 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 92aee432e1a3c0449357e2cac0e66ba1
     GuidInternal: 
-
-    m_lastTime: -8585187694813844086
-
+    m_lastTime: -8585186716215112334
     List:
     - name: Main
       guid: eeb8e4b88326bd49be3254cc2b481da1
@@ -170,7 +196,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 74d255e04480b84ea4118031516b9a26
     GuidInternal: 
-    m_lastTime: -8585187694823749150
+    m_lastTime: -8585186716240502755
     List:
     - name: AMB_Location_01
       guid: a5e63bc156a5c54ea042fc4d8610baf9
@@ -186,6 +212,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: a5e63bc156a5c54ea042fc4d8610baf9
       Path: Events\Default Work Unit\AMB_Location_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lose
+      guid: a9413b273f45b7428bced83838065f8d
+      id: 221232726
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 74d255e04480b84ea4118031516b9a26
+      - ElementName: Lose
+        ObjectType: 3
+        guid: a9413b273f45b7428bced83838065f8d
+      Path: Events\Default Work Unit\Lose
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -206,7 +249,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-
     - name: UI
       guid: 281c811162ecf64fb62fb60f6944f952
       id: 1551306167
@@ -284,6 +326,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Win
+      guid: e1f9245b08b3aa4ba92ccf5b19a84ca0
+      id: 979765101
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 74d255e04480b84ea4118031516b9a26
+      - ElementName: Win
+        ObjectType: 3
+        guid: e1f9245b08b3aa4ba92ccf5b19a84ca0
+      Path: Events\Default Work Unit\Win
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Wind
+      guid: 962ed51fe93d8b44a1888a166f56325b
+      id: 1537061107
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 74d255e04480b84ea4118031516b9a26
+      - ElementName: Wind
+        ObjectType: 3
+        guid: 962ed51fe93d8b44a1888a166f56325b
+      Path: Events\Default Work Unit\Wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -296,9 +372,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 916bf3713404ee4190fe42b57a2689d2
     GuidInternal: 
-
     m_lastTime: -8585187694823739154
-
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -312,9 +386,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 80eddc88d72615488827730ddcc53a58
     GuidInternal: 
-
     m_lastTime: -8585187694813834083
-
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -327,7 +399,7 @@ MonoBehaviour:
       guid: 464af60ede2f3749960f8e2c3bd04762
     ParentPath: Switches\Default Work Unit
     guid: 464af60ede2f3749960f8e2c3bd04762
-
+    GuidInternal: 
     m_lastTime: -8585187694813824082
     List: []
   TriggerWwu:
@@ -343,7 +415,6 @@ MonoBehaviour:
     guid: bb81eb0387a2004ca2b83aac3407f525
     GuidInternal: 
     m_lastTime: -8585187694813824082
-
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
