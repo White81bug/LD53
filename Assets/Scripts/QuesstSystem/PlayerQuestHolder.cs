@@ -12,6 +12,13 @@ public class PlayerQuestHolder : MonoBehaviour
   {
     if (quest == null) return;
     canPickUp = quest.Goal.GoalType == GoalType.Gather;
-    if (quest.Goal.IsReached()) quest = null;
+    if (quest.Goal.IsReached())
+        {
+            if (quest.title == "GatherSupplies")
+            {
+                Debug.Log("Can fly from here!");
+            }
+            quest = null;
+        }
   }
 }
