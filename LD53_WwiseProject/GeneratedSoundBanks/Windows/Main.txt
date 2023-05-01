@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	221232726	Lose			\Default Work Unit\Lose	
+	465612373	EnemyZone			\Default Work Unit\EnemyZone	
 	979341015	PC_footstep			\Default Work Unit\Player\PC_footstep	
 	979765101	Win			\Default Work Unit\Win	
 	1537061107	Wind			\Default Work Unit\Wind	
@@ -13,38 +14,46 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	443970491	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Silence\Silence	
+	466617862	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\silence_02\Silence	
+	556675280	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\silence_01\Silence	
+	795429543	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\silence_03\Silence	
 	919623103	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Silence_03\Silence	
 	976708773	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Bag\silence\Silence	
 	990562241	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Silence_02\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	42087678	footspep_02	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footspep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footspep_02		77932
-	146646628	UI_Click_NewGame	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\UI_Click_NewGame_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Click_NewGame		1250340
-	214061265	Win	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Win_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinLose\Win\Win		2889368
-	248543126	Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1		601980
-	306575263	Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159_678DDD86.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159		6928864
-	327501103	amb_location_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\amb_location_01_62AE07D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\amb_location_01		35288436
-	395438971	bag2_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\bag2_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Bag\bag2_01		110132
-	458163175	Wind, Gust, Designed, Polar, Snow Storm 06 SND54161	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 06 SND54161_8AB8EF0E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 06 SND54161		2527284
-	477539199	mus_mainmenu_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\mus_mainmenu_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\MUS_Menu\mus_mainmenu_01		2422676
-	544681490	footspep_03	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footspep_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footspep_03		77932
-	631581429	Lose	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Lose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinLose\Lose		1719252
-	666330763	Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659		766780
-	668461636	dirt_02	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\dirt_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Dust\dirt_02		159788
-	670212554	Wind, Gust, Designed, Polar, Snow Storm 05 SND54162	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 05 SND54162_337AC078.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 05 SND54162		2153348
-	677751872	PC_collect	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\PC_collect_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PC_collect		574576
-	695301052	dust_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\dust_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Dust\dust_01		110132
-	710587988	UI_Click	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\UI_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Click		31160
-	733318528	Wind, Gust, Designed, Polar, Snow Storm 04 SND54163	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 04 SND54163_288ADC92.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 04 SND54163		3390128
-	748498315	Wind, Interior, Howling, Tempest, Wind 02 SND54295	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Interior, Howling, Tempest, Wind 02 SND54295_1A18F747.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Interior, Howling, Tempest, Wind 02 SND54295		3464508
-	758248416	Object collect	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Object collect_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Object collect		402440
-	858772338	mus_mainmenu_02	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\mus_mainmenu_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\MUS_Menu\mus_mainmenu_02		4915296
-	863795930	Wind, Interior, Howling, Tempest, Wind 01 SND54296	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Interior, Howling, Tempest, Wind 01 SND54296_F533EAB1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Interior, Howling, Tempest, Wind 01 SND54296		5537012
-	890744551	Dirt & Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Dirt & Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Dirt & Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1		879240
-	913623480	Wind, Gust, Designed, Polar, Snow Storm 03 SND54164	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 03 SND54164_61C18A08.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 03 SND54164		2449388
-	918305144	UI_hover	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\UI_hover_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_hover		34192
-	920026161	footspep_04	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footspep_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footspep_04		76564
-	933419192	footstep_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footstep_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footstep_01		63544
-	1026049036	bag1_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\bag1_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Bag\bag1_01		110132
-	1043909902	pre_footstep_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\pre_footstep_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\preFootstep\pre_footstep_01		63608
+	42087678	footspep_02	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footspep_02_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footspep_02		3925
+	136270247	Enemy_Mus	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Enemy_Mus_7088C518.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Enemy_Mus		1752496
+	146646628	UI_Click_NewGame	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\UI_Click_NewGame_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Click_NewGame		91409
+	214061265	Win	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Win_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinLose\Win\Win		229549
+	248543126	Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659 1		75834
+	306575263	Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159_4C7927B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm, Long 01 SND54159		508364
+	322576149	Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 3		19520
+	327501103	amb_location_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\amb_location_01_C6043D73.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\amb_location_01		2691907
+	395438971	bag2_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\bag2_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Bag\bag2_01		7195
+	458163175	Wind, Gust, Designed, Polar, Snow Storm 06 SND54161	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 06 SND54161_232E5B3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 06 SND54161		189292
+	477539199	mus_mainmenu_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\mus_mainmenu_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\MUS_Menu\mus_mainmenu_01		139730
+	544681490	footspep_03	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footspep_03_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footspep_03		4413
+	631581429	Lose	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Lose_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinLose\Lose		127208
+	666330763	Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Dirt & Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659		110633
+	668461636	dirt_02	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\dirt_02_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Dust\dirt_02		12571
+	670212554	Wind, Gust, Designed, Polar, Snow Storm 05 SND54162	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 05 SND54162_20BF437F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 05 SND54162		148002
+	677751872	PC_collect	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\PC_collect_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PC_collect		32462
+	695301052	dust_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\dust_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Dust\dust_01		7338
+	710587988	UI_Click	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\UI_Click_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Click		3488
+	724677281	Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 21 SND9355 4		25050
+	733318528	Wind, Gust, Designed, Polar, Snow Storm 04 SND54163	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 04 SND54163_64359E19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 04 SND54163		235752
+	748498315	Wind, Interior, Howling, Tempest, Wind 02 SND54295	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Interior, Howling, Tempest, Wind 02 SND54295_A6E7A0E4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Interior, Howling, Tempest, Wind 02 SND54295		200249
+	758248416	Object collect	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Object collect_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Object collect		33401
+	787692856	Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 1		32064
+	858772338	mus_mainmenu_02	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\mus_mainmenu_02_7CF76C3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\MUS_Menu\mus_mainmenu_02		396358
+	863795930	Wind, Interior, Howling, Tempest, Wind 01 SND54296	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Interior, Howling, Tempest, Wind 01 SND54296_A90385F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Interior, Howling, Tempest, Wind 01 SND54296		309290
+	890744551	Dirt & Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Dirt & Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Dust\Dirt & Sand, Dust, Settling, Pebbles, Tumbling, Rolling SND42662 1		129117
+	906682752	Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyVoices\Creatures, Humanoid, Troll, Mad, Growling, Pitchdown -12st 01 SND9375 2		24319
+	913623480	Wind, Gust, Designed, Polar, Snow Storm 03 SND54164	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\Wind, Gust, Designed, Polar, Snow Storm 03 SND54164_E807594F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind, Gust, Designed, Polar, Snow Storm 03 SND54164		178165
+	918305144	UI_hover	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\UI_hover_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_hover		3531
+	920026161	footspep_04	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footspep_04_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footspep_04		3434
+	933419192	footstep_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\footstep_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Footstep\footstep_01		4124
+	1026049036	bag1_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\bag1_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\Bag\bag1_01		7174
+	1043909902	pre_footstep_01	D:\GitHUb\LD53\LD53_WwiseProject\.cache\Windows\SFX\pre_footstep_01_23350B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footstep\footstep\preFootstep\pre_footstep_01		2635
 

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bc83ad18bc482c4e81af402c8737b396
     GuidInternal: 
-    m_lastTime: -8585189812306148471
+    m_lastTime: -8585188530475934657
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4952dba519f15446b876eabf68b8eb2c
     GuidInternal: 
-    m_lastTime: -8585187530475698614
+    m_lastTime: -8585186515405088513
     List:
+    - name: Ambince
+      guid: 07cb0f3348ffa8469c9d24c11f58ebf2
+      id: 263959058
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4952dba519f15446b876eabf68b8eb2c
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Ambince
+        ObjectType: 2
+        guid: 07cb0f3348ffa8469c9d24c11f58ebf2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambince
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,23 +71,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-    - name: MusicAux
-      guid: 88c63e0dc40531489aa73ddd3cf49cf7
-      id: 3155190748
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4952dba519f15446b876eabf68b8eb2c
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: MusicAux
-        ObjectType: 1
-        guid: 88c63e0dc40531489aa73ddd3cf49cf7
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAux
     - name: MusicBus
       guid: f1450f6529cd6042b6c8f23e23d0db40
       id: 2886307548
@@ -88,9 +88,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: f1450f6529cd6042b6c8f23e23d0db40
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicBus
-    - name: UIAux
-      guid: d1f8dfde51fc7c409d85073c8a7b680f
-      id: 1640882099
+    - name: Player
+      guid: bde3ca901db7404a87713a00ab26eded
+      id: 1069431850
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -101,10 +101,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: UIAux
-        ObjectType: 1
-        guid: d1f8dfde51fc7c409d85073c8a7b680f
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UIAux
+      - ElementName: Player
+        ObjectType: 2
+        guid: bde3ca901db7404a87713a00ab26eded
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player
     - name: UiBus
       guid: af33eeac29fbe944a58d03a2cd87ae00
       id: 1372881427
@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 92aee432e1a3c0449357e2cac0e66ba1
     GuidInternal: 
-    m_lastTime: -8585186606176609280
+    m_lastTime: -8585186515398690153
     List:
     - name: Main
       guid: eeb8e4b88326bd49be3254cc2b481da1
@@ -196,7 +196,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 74d255e04480b84ea4118031516b9a26
     GuidInternal: 
-    m_lastTime: -8585186606176548050
+    m_lastTime: -8585186515406077970
     List:
     - name: AMB_Location_01
       guid: a5e63bc156a5c54ea042fc4d8610baf9
@@ -212,6 +212,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: a5e63bc156a5c54ea042fc4d8610baf9
       Path: Events\Default Work Unit\AMB_Location_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnemyZone
+      guid: 362e19575ff36a47aab416189ef5a6df
+      id: 465612373
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 74d255e04480b84ea4118031516b9a26
+      - ElementName: EnemyZone
+        ObjectType: 3
+        guid: 362e19575ff36a47aab416189ef5a6df
+      Path: Events\Default Work Unit\EnemyZone
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -246,6 +263,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6052ae0c688b2240964968f23a7b8ea4
       Path: Events\Default Work Unit\MUS_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Obj_collect
+      guid: 79d88e9002ae3946b4d7f1e0800dd1f5
+      id: 2333350319
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 74d255e04480b84ea4118031516b9a26
+      - ElementName: UI
+        ObjectType: 4
+        guid: 281c811162ecf64fb62fb60f6944f952
+      - ElementName: Obj_collect
+        ObjectType: 3
+        guid: 79d88e9002ae3946b4d7f1e0800dd1f5
+      Path: Events\Default Work Unit\UI\Obj_collect
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -429,8 +466,50 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 916bf3713404ee4190fe42b57a2689d2
     GuidInternal: 
-    m_lastTime: -8585189812305879133
-    List: []
+    m_lastTime: -8585186515406077970
+    List:
+    - name: Oxygen
+      guid: 833c3fd046873e44aba131708367c71a
+      id: 3660512661
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 916bf3713404ee4190fe42b57a2689d2
+      - ElementName: Oxygen
+        ObjectType: 13
+        guid: 833c3fd046873e44aba131708367c71a
+      Path: Game Parameters\Default Work Unit\Oxygen
+    - name: PauseMenuFilter
+      guid: 9a74d83de3b87b49853a88833d0bf38b
+      id: 2409417334
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 916bf3713404ee4190fe42b57a2689d2
+      - ElementName: PauseMenuFilter
+        ObjectType: 13
+        guid: 9a74d83de3b87b49853a88833d0bf38b
+      Path: Game Parameters\Default Work Unit\PauseMenuFilter
+    - name: PauseMenuVolume
+      guid: 9372d033eac270479f282ea6308bb91c
+      id: 625099702
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 916bf3713404ee4190fe42b57a2689d2
+      - ElementName: PauseMenuVolume
+        ObjectType: 13
+        guid: 9372d033eac270479f282ea6308bb91c
+      Path: Game Parameters\Default Work Unit\PauseMenuVolume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -443,7 +522,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 80eddc88d72615488827730ddcc53a58
     GuidInternal: 
-    m_lastTime: -8585189812305669436
+    m_lastTime: -8585188530475949682
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -457,7 +536,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 464af60ede2f3749960f8e2c3bd04762
     GuidInternal: 
-    m_lastTime: -8585189812306412370
+    m_lastTime: -8585188530475939717
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -471,7 +550,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bb81eb0387a2004ca2b83aac3407f525
     GuidInternal: 
-    m_lastTime: -8585189812306238493
+    m_lastTime: -8585188530475939717
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
