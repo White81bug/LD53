@@ -160,7 +160,24 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="CollectObject" ID="{E44EF0FF-ECDC-484E-B573-06D75E8784E4}"/>
+				<Event Name="EnemyZone" ID="{57192E36-F35F-476A-AAB4-16189EF5A6DF}">
+					<ChildrenList>
+						<Action Name="" ID="{730AAEEE-8D29-4C62-972C-1CB45FEEE6DA}" ShortID="615874082">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyVoices" ID="{F54E95FF-E376-4216-A2CE-993E6239A2B1}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DEBBBA7E-56CE-417C-BB01-7D66A5B9B341}" ShortID="121595723">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Mus" ID="{7D300D3F-E5E4-4A20-ADDB-C03CECD41406}" WorkUnitID="{55BEA023-3A12-4868-9A05-53DC320F2692}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

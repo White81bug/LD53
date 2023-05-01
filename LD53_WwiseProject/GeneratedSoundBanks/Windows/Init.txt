@@ -1,4 +1,6 @@
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	625099702	PauseMenuVolume			\Default Work Unit\PauseMenuVolume	
+	2409417334	PauseMenuFilter			\Default Work Unit\PauseMenuFilter	
 	3660512661	Oxygen			\Default Work Unit\Oxygen	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_LOCATION_01 = 3627746619U;
+        static const AkUniqueID ENEMYZONE = 465612373U;
         static const AkUniqueID LOSE = 221232726U;
         static const AkUniqueID MUS_MENU = 3149643052U;
         static const AkUniqueID OBJ_COLLECT = 2333350319U;
@@ -29,6 +30,8 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID OXYGEN = 3660512661U;
+        static const AkUniqueID PAUSEMENUFILTER = 2409417334U;
+        static const AkUniqueID PAUSEMENUVOLUME = 625099702U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
