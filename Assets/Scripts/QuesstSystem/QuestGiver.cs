@@ -32,7 +32,7 @@ public class QuestGiver : MonoBehaviour
     private void AcceptQuest(InputAction.CallbackContext ctx)
     {
         if(!_inTrigger) return;
-        if(player.quest != null) {Debug.Log("Already has quest"); return;}
+        //if(player.quest != null) {Debug.Log("Already has quest"); return;}
         if(questGiven) return;
         Debug.Log("Accepted");
         quest.isActive = true;
